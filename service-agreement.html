@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Service Agreement</title>
+
+    <meta name="description" content="user profile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/upload.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <link href="assets/signature/jquery.signature.css" rel="stylesheet" />
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css" rel="stylesheet">
+
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                        <small>
+                            <img src="assets/img/logo.png" alt="" />
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                            <li>
+                                <a class=" dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
+                                    <i class="icon fa fa-warning"></i>
+                                </a>
+                                <!--Notification Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-phone bg-themeprimary white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Skype meeting with Patty</span>
+                                                    <span class="description">01:00 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-clock-o themeprimary"></i>
+                                                    <span class="description">office</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-check bg-darkorange white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Uncharted break</span>
+                                                    <span class="description">03:30 pm - 05:15 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-clock-o darkorange"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-gift bg-warning white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Kate birthday party</span>
+                                                    <span class="description">08:30 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-calendar warning"></i>
+                                                    <i class="fa fa-clock-o warning"></i>
+                                                    <span class="description">at home</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-glass bg-success white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Dinner with friends</span>
+                                                    <span class="description">10:30 pm</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-footer ">
+                                        <span>
+                                            Today, March 28
+                                        </span>
+                                        <span class="pull-right">
+                                            10°c
+                                            <i class="wi wi-cloudy"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <!--/Notification Dropdown-->
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
+                                    <i class="icon fa fa-envelope"></i>
+                                    <span class="badge">3</span>
+                                </a>
+                                <!--Messages Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Divyia Austin
+                                                </span>
+                                                <span class="message-time">
+                                                    2 minutes ago
+                                                </span>
+                                                <span class="message-subject">
+                                                    Here's the recipe for apple pie
+                                                </span>
+                                                <span class="message-body">
+                                                    to identify the sending application when the senders image is shown for the main icon
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Bing.com
+                                                </span>
+                                                <span class="message-time">
+                                                    Yesterday
+                                                </span>
+                                                <span class="message-subject">
+                                                    Bing Newsletter: The January Issue‏
+                                                </span>
+                                                <span class="message-body">
+                                                    Discover new music just in time for the Grammy® Awards.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Nicolas
+                                                </span>
+                                                <span class="message-time">
+                                                    Friday, September 22
+                                                </span>
+                                                <span class="message-subject">
+                                                    New 4K Cameras
+                                                </span>
+                                                <span class="message-body">
+                                                    The 4K revolution has come over the horizon and is reaching the general populous
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Messages Dropdown-->
+                            </li>
+
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
+                                    <i class="icon fa fa-tasks"></i>
+                                    <span class="badge">4</span>
+                                </a>
+                                <!--Tasks Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                                    <li class="dropdown-header bordered-darkorange">
+                                        <i class="fa fa-tasks"></i>
+                                        4 Tasks In Progress
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Account Creation</span>
+                                                <span class="pull-right">65%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:65%" class="progress-bar"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Profile Data</span>
+                                                <span class="pull-right">35%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:35%" class="progress-bar progress-bar-success"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Updating Resume</span>
+                                                <span class="pull-right">75%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:75%" class="progress-bar progress-bar-darkorange"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Adding Contacts</span>
+                                                <span class="pull-right">10%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:10%" class="progress-bar progress-bar-warning"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown-footer">
+                                        <a href="#">
+                                            See All Tasks
+                                        </a>
+                                        <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right"><i class="fa fa-check"></i></button>
+                                    </li>
+                                </ul>
+                                <!--/Tasks Dropdown-->
+                            </li>
+                            <!-- <li>
+                                <a class="wave in" id="chat-link" title="Chat" href="#">
+                                    <i class="icon glyphicon glyphicon-comment"></i>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar" title="View your public profile">
+                                    <img src="assets/img/user.png" class="img-responsive">
+                                    </div>
+                                    <section>
+                                        <h2><span class="profile"><span>Client</span></span></h2>
+                                    </section>
+                                </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                    <li class="username"><a>Client</a></li>
+                                    <li class="email"><a>client@pir.com</a></li>
+                                    <!--Avatar Area-->
+
+                                    <li class="edit">
+                                        <a href="client-profile.html" class="pull-right">Edit Profile</a>
+                                    </li>
+
+                                    <li class="dropdown-footer">
+                                        <a href="login.html">
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                <div class="sidebar-header-wrapper">
+                    <input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                </div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li>
+                        <a href="client-index.html">
+                            <i class="menu-icon glyphicon glyphicon-dashboard red"></i>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="service-agreement.html">
+                            <i class="menu-icon glyphicon glyphicon-wrench green"></i>
+                            <span class="menu-text"> Service Agreement </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="research-intake-form.html">
+                            <i class="menu-icon fa fa-file-pdf-o purple"></i>
+                            <span class="menu-text"> Research Intake Form </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="client-view-orders.html">
+                            <i class="menu-icon fa fa-eye red"></i>
+                            <span class="menu-text"> View Orders </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="client-profile.html">
+                            <i class="menu-icon glyphicon glyphicon-user yellow"></i>
+                            <span class="menu-text"> View Profile </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Chat Bar -->
+            <div id="chatbar" class="page-chatbar">
+                <div class="chatbar-contacts">
+                    <div class="contacts-search">
+                        <input type="text" class="searchinput" placeholder="Search Contacts" />
+                        <i class="searchicon fa fa-search"></i>
+                        <div class="searchhelper">Search Your Contacts and Chat History</div>
+                    </div>
+                    <ul class="contacts-list">
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/profile.png" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">James Smith</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    last week
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/Nicolai-Larson.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Adam Johnson</div>
+                                <div class="contact-status">
+                                    <div class="offline"></div>
+                                    <div class="status">left 4 mins ago</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    today
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/John-Smith.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">John Smith</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    1:57 am
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/Osvaldus-Valutis.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Osvaldus Valutis</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    today
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/Javi-Jimenez.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Javi Jimenez</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    today
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/Stephanie-Walter.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Stephanie Walter</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    yesterday
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/Sergey-Azovskiy.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Sergey Azovskiy</div>
+                                <div class="contact-status">
+                                    <div class="offline"></div>
+                                    <div class="status">offline since oct 24</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    22 oct
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/Lee-Munroe.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Lee Munroe</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    today
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact">
+                            <div class="contact-avatar">
+                                <img src="assets/img/avatars/divyia.jpg" />
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-name">Divyia Philips</div>
+                                <div class="contact-status">
+                                    <div class="online"></div>
+                                    <div class="status">online</div>
+                                </div>
+                                <div class="last-chat-time">
+                                    last week
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chatbar-messages" style="display: none;">
+                    <div class="messages-contact">
+                        <div class="contact-avatar">
+                            <img src="assets/img/avatars/divyia.jpg" />
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-name">Divyia Philips</div>
+                            <div class="contact-status">
+                                <div class="online"></div>
+                                <div class="status">online</div>
+                            </div>
+                            <div class="last-chat-time">
+                                a moment ago
+                            </div>
+                            <div class="back">
+                                <i class="fa fa-arrow-circle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="messages-list">
+                        <li class="message">
+                            <div class="message-info">
+                                <div class="bullet"></div>
+                                <div class="contact-name">Me</div>
+                                <div class="message-time">10:14 AM, Today</div>
+                            </div>
+                            <div class="message-body">
+                                Hi, Hope all is good. Are we meeting today?
+                            </div>
+                        </li>
+                        <li class="message reply">
+                            <div class="message-info">
+                                <div class="bullet"></div>
+                                <div class="contact-name">Divyia</div>
+                                <div class="message-time">10:15 AM, Today</div>
+                            </div>
+                            <div class="message-body">
+                                Hi, Hope all is good. Are we meeting today?
+                            </div>
+                        </li>
+                        <li class="message">
+                            <div class="message-info">
+                                <div class="bullet"></div>
+                                <div class="contact-name">Me</div>
+                                <div class="message-time">10:14 AM, Today</div>
+                            </div>
+                            <div class="message-body">
+                                Hi, Hope all is good. Are we meeting today?
+                            </div>
+                        </li>
+                        <li class="message reply">
+                            <div class="message-info">
+                                <div class="bullet"></div>
+                                <div class="contact-name">Divyia</div>
+                                <div class="message-time">10:15 AM, Today</div>
+                            </div>
+                            <div class="message-body">
+                                Hi, Hope all is good. Are we meeting today?
+                            </div>
+                        </li>
+                        <li class="message">
+                            <div class="message-info">
+                                <div class="bullet"></div>
+                                <div class="contact-name">Me</div>
+                                <div class="message-time">10:14 AM, Today</div>
+                            </div>
+                            <div class="message-body">
+                                Hi, Hope all is good. Are we meeting today?
+                            </div>
+                        </li>
+                        <li class="message reply">
+                            <div class="message-info">
+                                <div class="bullet"></div>
+                                <div class="contact-name">Divyia</div>
+                                <div class="message-time">10:15 AM, Today</div>
+                            </div>
+                            <div class="message-body">
+                                Hi, Hope all is good. Are we meeting today?
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="send-message">
+                        <span class="input-icon icon-right">
+                            <textarea rows="4" class="form-control" placeholde <!-- /Page Sidebar --> r="Type your message"></textarea>
+                            <i class="fa fa-camera themeprimary"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- /Chat Bar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="active">Service Agreement</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1 class="theme-color">
+                            Service Agreement
+                        </h1>
+                    </div>
+                    <div class="header-right">
+                      <a type="submit" href="upload/PIR_Service_Agreement.pdf" target="_blank" class="btn cust-btn"><i class="icon fa fa-download"></i> Service Agreement</a>
+                    </div>
+                    <!--Header Buttons
+                    <div class="header-buttons">
+                        <a class="sidebar-toggler" href="#">
+                            <i class="fa fa-arrows-h"></i>
+                        </a>
+                      </div>
+                    Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+                  <div class="row">
+                      <div class="col-md-12 col-lg-12">
+                        <div class="page-view">
+                          <div class="btn-style">
+                            <button class="button" id="singature-click"><span>Electronic Signature </span></button>
+                            <button class="button pull-right" id="upload-click"><span>Download Signature Form</span></button>
+                          </div>
+                          <div id="signature-form">
+                            <div class="service-agreement scrollbar2 style-2">
+                              <h2 class="text-center">SERVICE AGREEMENT</h2>
+                                <div class="table-responsive">
+                                  <table class="table service-agreement-table">
+                                    <tbody>
+                                    <tr>
+                                      <td colspan="3"><p>This Agreement was entered into by and between Positive Influence Research, Inc. </p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><ul><li><p>(“PIR”) and </p></li><li><input type="text" class="form-control" /></li><li><p>("client").</p></li></ul></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>1. Services Offered</h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>PIR provides efficient and through review of social media sites of targeted
+                                        individuals/companies. After such review, PIR will provide a comprehensive report of its
+                                        findings to Client. </p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>2. Source Material</h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>PI will only review publically available social media, press releases, news, etc.  PIR will not seek information on a private site of social media by any means.  PIR service will not violate the privacy of any subject. </p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>3. Use of Information</h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>3.1 Client represents and warrants that it will use PIR’s report solely to research for appropriate personalities for potential product endorsements, or similar uses.  Client agrees it will not use the reports for any other purpose, including employment of the subject.  Client represents and warrants that it is the end-user of the report.  It will not resell the report, but it may share the report with those who have a mutual interest in the information. </p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>3.2 Client shall not directly or indirectly use information provided by PIR to harass, stalk, or otherwise violate the subject’s right to privacy.  The same restrictions shall also apply to any other person identified in a report. </p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>4. Warranty</h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>PIR warrants that it will accurately report information found on social media regarding the subject.  PIR will not report information that it knows does not relate to the subject.  Client understands and agrees that PIR relies upon the information posted and cannot know whether the information is accurate.  PIR agrees to accurately report what is posted.  Client agrees to hold PIR harmless and will indemnify PIR, its employees, its officers, agents, insurers and attorneys from all claims arising out of PIR’s obtaining and delivery of reports to Client, unless PIR willfully provided a false report.  The indemnification covers all damages, interest, expenses, court costs, reasonable expert and attorney fees.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>5. Fees</h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>5.1 Attached hereto as Schedule “A” is PIR’s Fee Schedule.  PIR reserves the right to change fees at any time.  Any increased fee shall become effective for thirty (30) days from such notice, but reports currently being worked will not be affected by any rate changes.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>5.2	Payment on all invoices will be due thirty (30) days after billing.  For any invoice not paid within thirty (30) days, PIR will add and collect a SERVICE CHARGE of one and a half percent (1½%) per month (or the maximum permitted by applicable law, if lower) with a minimum service charge of $2.00.  Client agrees to pay PIR’s reasonable attorney’s fees and costs incurred in enforcing the terms of this Agreement and in the collection of amounts due under this Agreement.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>6. Data Security  </h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>Both Parties agree to protect the content of all reports from internal or external unauthorized access.  Only employees who have the need to know shall have access to reports.  Hard copies of the reports will be kept in lockable file cabinets or a lockable room.  Such facility shall be locked during non-business hours.  Information that is maintained electronically shall be protected with secure passwords; no default passwords shall be used.  Any employee who has access to the information who leaves the employment of a Party shall have their password immediately terminated.  Computer monitor screens shall not be positioned to allow third parties to view what is on the screen when reports are displayed.  All computers shall be turned off during non-business hours.  If either Party experiences a material security breach it shall immediately notify the other by the next business day.  </p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><h4>7. Term</h4></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p>This Agreement shall have no term.  Client may continue to place orders over time pursuant to this Agreement.  If PIR’s Service Agreement has materially changed since the previous order, Client may be requested to execute a new Agreement.  If fees have been changed since the previous order, PIR shall advise Client prior to commencing the requested search.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p><span class="span-bold">8.</span> This Agreement constitutes the entire understanding between the parties and supersedes all previous agreements, negotiations and representations.  This Agreement may only be modified in writing signed by both parties; however, subsequent representations by Client to show compliance with existing or future laws are effective when signed by Client and become a part of this Agreement.  This Agreement is for the exclusive benefit of the parties hereto and no benefit is intended for any third party.  The relationship between the Parties is PIR is an independent contractor and no employment, agency, etc, relationship is created.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p><span class="span-bold">9.</span>	All communications and notices to be given under this Agreement will be made to the addresses, street and email, and telephone numbers set forth herein.  Each party will notify the other promptly of any change of address or telephone number.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p><span class="span-bold">10.</span> This Agreement is intended to be subject to, and in compliance with, all applicable state and federal statutes and regulations.  Insofar as this Agreement or any provision may subsequently be determined to be a variance or not in compliance with any such statute or regulation, it will be considered to be amended or modified to the extent necessary to make it comply, and PIR and Client hereby consent and agree to any such amendment or modification.  Further, the invalidity of any one provision shall not affect the validity of the other provisions.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><p><span class="span-bold">11.</span> Neither Party is responsible for any events or circumstances beyond its control that prevent it from meeting its obligations, which include but are not limited to:  war, riots, embargos, strikes, disruptions in communications or acts of God.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="width:50%">
+                                        <p class="span-bold">Positive Influence Research, Inc. </p>
+                                        <p class="span-bold" style="padding-left:76px;">(“PIR”)</p>
+                                        <table class="service-agreement-table">
+                                          <tbody>
+                                            <tr>
+                                              <td><span class="span-bold">By:</span></td>
+                                              <td><input type="text" class="form-control" style="width:300px !important;"/></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="service-address"><span class="span-bold">Address:</span></td>
+                                              <td>
+                                                <p>154 Attorney Street</p>
+                                                <p>Suite 104</p>
+                                                <p>New York, NY 10002</p>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td><span class="span-bold">Email: </span></td>
+                                              <td><p class="service-agreement-a">mike@positiveinfluence.com</p></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td  style="width:49%">
+                                        <p class="span-bold">CLIENT (Name)</p>
+                                        <p class="span-bold" style="padding-left:76px;">&nbsp;</p>
+                                        <table class="service-agreement-table">
+                                          <tbody>
+                                            <tr>
+                                              <td><span class="span-bold">By:</span></td>
+                                              <td><input type="text" class="form-control" style="width:300px !important;"/></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="service-address"><span class="span-bold">Address:</span></td>
+                                              <td class="service-td-hgt">
+
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td><span class="span-bold">Email: </span></td>
+                                              <td></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox" class="colored-primary" id="terms-conditions">
+                                            <span class="text darkgray">I agree to the Company <a class="themeprimary">Terms of Service</a> and Privacy Policy</span>
+                                          </label>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+
+
+                            </div>
+
+                          </div>
+                          <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                      			<div id="drop">
+                      				Drop Here
+
+                      				<a>Browse</a>
+                      				<input type="file" name="upl" multiple />
+                      			</div>
+                            <ul>
+                      				<!-- The file uploads will be shown here -->
+                      			</ul>
+                          </form>
+                          <div class="text-center">
+                            <a type="submit" class="btn cust-btn text-center mrg-top-25">Save</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+
+    </div>
+
+    <div class="modal fade" id="service-agreement-sign" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myLargeModalLabel">Electronic Signature</h4>
+                    </div>
+                    <div class="modal-body text-center">
+
+                      <div id="sig"></div>
+                      <p style="clear: both;" class="mrg-top-10">
+                      	<!-- <button  id="disable">Disable</button> -->
+                      	<button class="btn cust-btn" id="clear">Clear</button>
+                      	<!-- <button id="json">To JSON</button> -->
+                      	<button class="btn cust-btn" id="svg">Save</button>
+                      </p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+
+
+</body>
+<!--Basic Scripts-->
+ <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+<!--Beyond Scripts-->
+<script src="assets/js/beyond.min.js"></script>
+
+<!--Page Related Scripts-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script src="https://maps.gstatic.com/intl/en_us/mapfiles/api-3/17/0/main.js" type="text/javascript"></script>
+
+<script src="assets/js/charts/flot/jquery.flot.js"></script>
+<script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
+
+
+
+<!-- jQuery File Upload Dependencies -->
+  <script src="assets/js/upload/jquery.knob.js"></script>
+<script src="assets/js/upload/jquery.ui.widget.js"></script>
+<script src="assets/js/upload/jquery.iframe-transport.js"></script>
+<script src="assets/js/upload/jquery.fileupload.js"></script>
+<script src="assets/js/upload/script.js"></script>
+<!-- signature script files -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="assets/signature/jquery.signature.js"></script>
+<script>
+$(function() {
+	var sig = $('#sig').signature();
+	$('#disable').click(function() {
+		var disable = $(this).text() === 'Disable';
+		$(this).text(disable ? 'Enable' : 'Disable');
+		sig.signature(disable ? 'disable' : 'enable');
+	});
+	$('#clear').click(function() {
+		sig.signature('clear');
+	});
+	$('#json').click(function() {
+		alert(sig.signature('toJSON'));
+	});
+	$('#svg').click(function() {
+		alert(sig.signature('toSVG'));
+	});
+});
+</script>
+<!-- end of signature script files -->
+<script>
+
+$(document).ready(function(){
+  $('#signature-form').show();
+  $('#upload').hide();
+});
+  $('#singature-click').click(function() {
+       $('#upload').hide();
+       $('#signature-form').show();
+
+  });
+  $('#upload-click').click(function() {
+       $('#signature-form').hide();
+       $('#upload').show();
+  });
+  $("#terms-conditions").click(function(){
+    if(($(this).prop('checked'))==true){
+      $("#service-agreement-sign").modal('show')
+    }
+
+  })
+</script>
+<!--  /Body -->
+</html>
