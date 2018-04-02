@@ -3,7 +3,7 @@
 <!-- Head -->
 <head>
     <meta charset="utf-8" />
-    <title>User Profile</title>
+    <title>Admin Profile</title>
 
     <meta name="description" content="user profile" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,7 +47,7 @@
                 <div class="navbar-header pull-left">
                     <a href="#" class="navbar-brand">
                         <small>
-                            <img src="assets/img/logo.png" alt="" />
+                            <img src="assets/img/logo-color.png" alt="" />
                         </small>
                     </a>
                 </div>
@@ -356,7 +356,7 @@
                   <li>
                     <a href="client.html">
                       <i class="menu-icon glyphicon glyphicon-copyright-mark green"></i>
-                      <span class="menu-text"> Client </span>
+                      <span class="menu-text"> Clients </span>
                     </a>
                   </li>
                   <li>
@@ -369,12 +369,6 @@
                     <a href="payment-settings.html">
                       <i class="menu-icon fa fa-money blue"></i>
                       <span class="menu-text"> Payment Settings </span>
-                    </a>
-                  </li>
-                  <li class="active">
-                    <a href="profile.html">
-                      <i class="menu-icon fa fa-user purple"></i>
-                      <span class="menu-text"> View Profile </span>
                     </a>
                   </li>
                 </ul>
@@ -622,11 +616,10 @@
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                        <li>
+                        <li class="active">
                             <i class="fa fa-home"></i>
-                            <a href="#">Home</a>
+                            <a href="#">Admin Profile</a>
                         </li>
-                        <li class="active">Employee Profile</li>
                     </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -634,7 +627,7 @@
                 <div class="page-header position-relative">
                     <div class="header-title">
                         <h1 class="theme-color">
-                            Employee Profile
+                            Admin Profile
                         </h1>
                     </div>
                     <!--Header Buttons
@@ -648,52 +641,22 @@
                 <!-- /Page Header -->
                 <!-- Page Body -->
                 <div class="page-body page-body-view">
-                    <div class="row">
+                    <div class="row mbl-row">
                         <div class="col-md-12">
                             <div class="profile-container">
                                 <div class="profile-header row">
                                     <div class="col-lg-2 col-md-4 col-sm-12 text-center">
                                         <img src="assets/img/profile.png" alt="" class="header-avatar" />
                                     </div>
-                                    <div class="col-lg-5 col-md-8 col-sm-12 profile-info">
+                                    <div class="col-lg-10 col-md-8 col-sm-12 profile-info">
                                         <div class="header-fullname">James Smith</div>
-                                        <a href="#" class="btn btn-palegreen btn-sm  btn-follow">
-                                            <i class="fa fa-check"></i>
-                                            Following
-                                        </a>
                                         <div class="header-information">
                                             Kim is a software developer in Microsoft. She works in ASP.NET MVC Team and collaborates with other teams.
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 profile-stats">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
-                                                <div class="stats-value profile-color-frst">284</div>
-                                                <div class="stats-title">FOLLOWING</div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
-                                                <div class="stats-value profile-color-sec">803</div>
-                                                <div class="stats-title">FOLLOWERS</div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
-                                                <div class="stats-value profile-color-trd">1207</div>
-                                                <div class="stats-title">POSTS</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col  profile-color-frst-b">
-                                                <i class="glyphicon glyphicon-map-marker"></i> Boston
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col  profile-color-sec-b">
-                                                Rate: <strong>$250</strong>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col  profile-color-trd-b">
-                                                Age: <strong>24</strong>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="profile-body">
+                                <div class="profile-body mbl-mrg-top-10">
                                     <div class="col-lg-12">
                                         <div class="tabbable">
                                             <ul class="nav nav-tabs tabs-flat  nav-justified" id="myTab11">
@@ -707,11 +670,11 @@
                                                         Edit Profile
                                                     </a>
                                                 </li>
-                                                <li class="tab-palegreen">
+                                                <!-- <li class="tab-palegreen">
                                                     <a data-toggle="tab" id="contacttab" href="#contacts">
                                                         Contacts
                                                     </a>
-                                                </li>
+                                                </li> -->
                                                 <li class="tab-orange">
                                                     <a data-toggle="tab" id="changepassword" href="#changepwd">
                                                         Change Password
@@ -726,65 +689,45 @@
                                                               Personal Information
                                                           </div>
                                                           <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">First Name:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">First Name:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">James</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">James</p>
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">Last Name:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">Last Name:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">Smith</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">Smith</p>
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                          </div>
-                                                          <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">Email:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">Email:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">James.Smith@pir.com</p>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                              <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">Phone Number:</label>
-                                                                <div class="col-sm-7">
-                                                                  <p class="form-control-static">(541) 754-3010</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">James.Smith@pir.com</p>
                                                                 </div>
                                                               </div>
                                                             </div>
                                                           </div>
                                                           <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">Mobile Number:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">Phone Number:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">(541) 754-3010</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">(541) 754-3010</p>
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">DOB:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">Mobile Number:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">25-08-1984</p>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="row">
-                                                            <div class="col-sm-6">
-                                                              <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">Birth Place:</label>
-                                                                <div class="col-sm-7">
-                                                                  <p class="form-control-static">California</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">(541) 754-3010</p>
                                                                 </div>
                                                               </div>
                                                             </div>
@@ -793,19 +736,27 @@
                                                               Contact Information
                                                           </div>
                                                           <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">address 1:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">Locality:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">California</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">Third Street</p>
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-4">
                                                               <div class="form-group">
-                                                                <label class="control-label col-sm-5" for="email">address 2:</label>
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">City:</label>
                                                                 <div class="col-sm-7">
-                                                                  <p class="form-control-static">US</p>
+                                                                  <p class="form-control-static lbl-pad-top-btm">San Francisco</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                              <div class="form-group">
+                                                                <label class="control-label col-sm-5 lbl-pad-top" for="email">State:</label>
+                                                                <div class="col-sm-7">
+                                                                  <p class="form-control-static lbl-pad-top-btm">California</p>
                                                                 </div>
                                                               </div>
                                                             </div>
@@ -825,7 +776,7 @@
                                                                   <label for="inputsm">First Name</label>
                                                                     <span class="input-icon icon-right">
                                                                         <input type="text" class="form-control">
-                                                                        <i class="fa fa-user blue"></i>
+                                                                        <!-- <i class="fa fa-user blue"></i> -->
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -834,7 +785,6 @@
                                                                   <label for="inputsm">Last Name</label>
                                                                     <span class="input-icon icon-right">
                                                                         <input type="text" class="form-control">
-                                                                        <i class="fa fa-user orange"></i>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -843,7 +793,6 @@
                                                                   <label for="inputsm">Email</label>
                                                                     <span class="input-icon icon-right">
                                                                         <input type="email" class="form-control">
-                                                                        <i class="fa fa-envelope-o orange"></i>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -851,10 +800,9 @@
                                                         <div class="row">
                                                             <div class="col-sm-4">
                                                                 <div class="form-group">
-                                                                  <label for="inputsm">Phone Number</label>
+                                                                  <label for="inputsm" >Phone Number</label>
                                                                     <span class="input-icon icon-right">
                                                                         <input type="text" class="form-control">
-                                                                        <i class="glyphicon glyphicon-earphone yellow"></i>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -862,32 +810,13 @@
                                                                 <div class="form-group">
                                                                   <label for="inputsm">Mobile</label>
                                                                     <span class="input-icon icon-right">
-                                                                        <input type="text" class="form-control" placeholder="Mobile">
-                                                                        <i class="glyphicon glyphicon-phone palegreen"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <div class="form-group">
-                                                                  <label for="inputsm">DOB</label>
-                                                                    <span class="input-icon icon-right">
-                                                                        <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy" placeholder="Birth Date">
-                                                                        <i class="fa fa-calendar"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <div class="form-group">
-                                                                  <label for="inputsm">Birth Place</label>
-                                                                    <span class="input-icon icon-right">
                                                                         <input type="text" class="form-control">
-                                                                        <i class="fa fa-globe"></i>
                                                                     </span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-4">
                                                                 <div class="form-group">
-                                                                  <label for="inputsm">Address 1</label>
+                                                                  <label for="inputsm">Locality</label>
                                                                     <span class="input-icon icon-right">
                                                                         <input type="text" class="form-control">
                                                                     </span>
@@ -895,7 +824,15 @@
                                                             </div>
                                                             <div class="col-sm-4">
                                                                 <div class="form-group">
-                                                                  <label for="inputsm">Address 2</label>
+                                                                  <label for="inputsm">City</label>
+                                                                    <span class="input-icon icon-right">
+                                                                        <input type="text" class="form-control">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                  <label for="inputsm">State</label>
                                                                     <span class="input-icon icon-right">
                                                                         <input type="text" class="form-control">
                                                                     </span>
@@ -1016,81 +953,6 @@
     <script src="assets/js/charts/flot/jquery.flot.js"></script>
     <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
 
-    <script>
-        //Google Map
-        $('#contacttab').click(function () {
-            function initialize() {
-                var myLatlng = new google.maps.LatLng(43.6531935, -79.3806243);
-                var mapOptions = {
-                    zoom: 15,
-                    scrollwheel: false,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(document.getElementById('contact-map'), mapOptions);
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: 'Map'
-                });
-            }
-            google.maps.event.addDomListener(window, 'click', initialize);
-        });
-
-        $(window).bind("load", function () {
-
-            /*Sets Themed Colors Based on Themes*/
-            themeprimary = getThemeColorFromCss('themeprimary');
-            themesecondary = getThemeColorFromCss('themesecondary');
-            themethirdcolor = getThemeColorFromCss('themethirdcolor');
-            themefourthcolor = getThemeColorFromCss('themefourthcolor');
-            themefifthcolor = getThemeColorFromCss('themefifthcolor');
-
-            //--------------------------Visitor Chart --->
-            var data = [{
-                color: themeprimary,
-                label: "Visits",
-                data: [[3, 10], [4, 13], [5, 12], [6, 16], [7, 19], [8, 19], [9, 24], [10, 19], [11, 18], [12, 21], [13, 17],
-                    [14, 14], [15, 12], [16, 14], [17, 15]]
-            }];
-            var options = {
-                series: {
-                    lines: {
-                        show: true,
-                        fill: true,
-                        fillColor: { colors: [{ opacity: 0.2 }, { opacity: 0 }] }
-                    },
-                    points: {
-                        show: true
-                    }
-                },
-                legend: {
-                    show: false
-                },
-                xaxis: {
-                    tickDecimals: 0,
-                    tickLength: 0,
-                    color: '#ccc'
-                },
-                yaxis: {
-                    min: 0,
-                    tickLength: 0,
-                    color: '#ccc'
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: false,
-                    borderWidth: 0,
-                    aboveData: false,
-                    color: '#fbfbfb'
-
-                },
-                tooltip: true
-            };
-            var placeholder = $("#visit-chart");
-            var plot = $.plot(placeholder, data, options);
-        });
-    </script>
 
 </body>
 <!--  /Body -->

@@ -3,7 +3,7 @@
 <!-- Head -->
 <head>
   <meta charset="utf-8" />
-  <title>Edit Employee</title>
+  <title>Employee Report Upload</title>
 
   <meta name="description" content="user profile" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
   <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="assets/css/upload.css" rel="stylesheet" />
   <link href="assets/css/custom.css" rel="stylesheet" />
   <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
 
@@ -47,14 +48,14 @@
         <div class="navbar-header pull-left">
           <a href="#" class="navbar-brand">
             <small>
-              <img src="assets/img/logo.png" alt="" />
+              <img src="assets/img/logo-color.png" alt="" />
             </small>
           </a>
         </div>
         <!-- /Navbar Barnd -->
         <!-- Sidebar Collapse -->
         <div class="sidebar-collapse" id="sidebar-collapse">
-          <i class="collapse-icon fa fa-bars"></i>
+          <i class="collapse-icon fa fa-caret-down"></i>
         </div>
         <!-- /Sidebar Collapse -->
         <!-- Account Area and Settings --->
@@ -295,18 +296,17 @@
                 <img src="assets/img/user.png" class="img-responsive">
               </div>
               <section>
-                <h2><span class="profile"><span>Admin</span></span></h2>
+                <h2><span class="profile"><span>Employee</span></span></h2>
               </section>
             </a>
             <!--Login Area Dropdown-->
             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-              <li class="username"><a>Admin</a></li>
-              <li class="email"><a>admin@pir.com</a></li>
+              <li class="username"><a>Employee</a></li>
+              <li class="email"><a>employee@pir.com</a></li>
               <!--Avatar Area-->
 
               <li class="edit">
-                <a href="profile.html" class="pull-left">View Profile</a>
-                <a href="#" class="pull-right">Edit Profile</a>
+                <a href="employee-profile.html" class="pull-right">Edit Profile</a>
               </li>
 
               <li class="dropdown-footer">
@@ -343,43 +343,22 @@
       <ul class="nav sidebar-menu">
         <!--Dashboard-->
         <li>
-            <a href="index.html">
-                <i class="menu-icon glyphicon glyphicon-dashboard red"></i>
-                <span class="menu-text"> Dashboard </span>
-            </a>
+          <a href="employee-index.html">
+            <i class="menu-icon glyphicon glyphicon-home"></i>
+            <span class="menu-text"> Dashboard </span>
+          </a>
         </li>
         <li class="active">
-            <a href="employee.html">
-                <i class="menu-icon glyphicon glyphicon-user yellow"></i>
-                <span class="menu-text"> Employee </span>
-            </a>
+          <a href="employee-jobs.html">
+            <i class="menu-icon fa fa-briefcase red"></i>
+            <span class="menu-text"> Jobs </span>
+          </a>
         </li>
         <li>
-            <a href="client.html">
-                <i class="menu-icon glyphicon glyphicon-copyright-mark green"></i>
-                <span class="menu-text"> Client </span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="menu-dropdown">
-                <i class="menu-icon fa fa-table"></i>
-                <span class="menu-text"> Notifications </span>
-
-                <i class="menu-expand"></i>
-            </a>
-
-            <ul class="submenu">
-                <li>
-                    <a href="client-notification.html">
-                        <span class="menu-text">Client Notifications</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="employee-notification.html">
-                        <span class="menu-text">Employee Notifications</span>
-                    </a>
-                </li>
-            </ul>
+          <a href="employee-report-upload.html">
+            <i class="menu-icon fa fa-upload green"></i>
+            <span class="menu-text"> Upload Reports </span>
+          </a>
         </li>
       </ul>
       <!-- /Sidebar Menu -->
@@ -638,11 +617,8 @@
       <div class="page-header position-relative">
         <div class="header-title">
           <h1 class="theme-color">
-            Employee
+          Edit Employee Information
           </h1>
-        </div>
-        <div class="header-right">
-          <a type="submit" href="employee.html" class="btn cust-btn">Back to Employee</a>
         </div>
         <!--Header Buttons
         <div class="header-buttons">

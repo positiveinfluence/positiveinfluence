@@ -1,23 +1,34 @@
+.bg-darkgray{background-color: #3D4544 !important;}
 .cust-btn {background-color: #05ce7c !important;color:#fff !important;outline: none !important;}
 .cust-btn:hover, .cust-btn:active, .cust-btn:focus {background-color: #05ce7c !important;color:#fff !important;}
 .theme-color{color:#05ce7c !important;}
 .page-breadcrumbs {box-shadow: none !important;}
+input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].colored-primary:checked~.text:before {
+    border-color: #43ce7c;
+    color: #43ce7c;
+}
 ﻿/* Login */
 .login-container {margin: 9% auto !important;}
 .login-container .loginbox {width:360px !important;padding: 0 0 3px 0;}
-.log-reg-img img{margin:0px auto;padding-top:10px;padding-bottom: 10px;}
+.log-reg-img img{margin:0px auto;padding-top:6px;padding-bottom: 10px;}
 .login-container .loginbox .loginbox-title {text-align: left;font-size:16px;height:30px;margin-left:15px;  }
 .login-container .loginbox .loginbox-textbox {padding: 5px 15px;}
 .login-container .loginbox .loginbox-forgot {padding-left: 15px;}
-.login-container .loginbox .loginbox-submit {padding: 10px 15px;}
+.login-container .loginbox .loginbox-submit {padding: 0px 15px 10px 15px;}
 .login-container .loginbox .loginbox-social {padding: 0 10px 0px;}
-.login-container .loginbox .loginbox-forgot a {font-size: 12px;}
+.login-container .loginbox .loginbox-forgot a {font-size: 12px;color:#fff !important;}
+.login-container .loginbox .loginbox-signup a {color:#fff;}
+.login-container .loginbox .loginbox-signup {text-align: center;padding: 10px 7px 7px 17px;text-decoration: underline;}
+.loginbox-remember {width: 50%;float: left;padding-left: 17px;}
+.loginbox-remember .checkbox {margin-top:3px !important;}
+.login-container .loginbox .loginbox-forgot {padding-left: 50%;  padding-top: 4px;text-align: right;padding-right: 15px;}
 .login-hr{
     margin-top: 0px;
     margin-bottom: 0px;
     width: 30%;
     border-top: 3px solid #05ce7c;
 }
+.cust-overflow{overflow: hidden;}
 .social .wrapper {
   display: inline-flex;
   margin: 0;
@@ -32,7 +43,7 @@
 }
 
 .social .wrapper i:nth-child(1) {
-  color: #4867AA;
+  color: #05ce7c;
   cursor: pointer;
   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 150ms;
@@ -45,7 +56,7 @@
 }
 
 .social .wrapper i:nth-child(2) {
-  color: #1DA1F2;
+  color: #05ce7c;
   cursor: pointer;
   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 150ms;
@@ -58,7 +69,7 @@
 }
 
 .social .wrapper i:nth-child(3) {
-  color: #444;
+  color: #05ce7c;
   cursor: pointer;
   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: all ease-in-out 150ms;
@@ -87,12 +98,23 @@
 .register-container .registerbox .registerbox-title {font-size: 16px !important;}
 .register-container .registerbox {width:425px !important;overflow: hidden;height: auto !important;}
 .register-container .registerbox .registerbox-submit {margin-bottom: 12px;}
+.register-container .registerbox .registerbox-caption{color:#fff !important;}
 /* End of Register page */
 
 /* header area */
+.page-sidebar:before {background: #5f625f !important;}
+.navbar .navbar-inner {background: #3D4544 !important;}
+.navbar .navbar-inner .navbar-header .navbar-account .account-area>li>a .badge {box-shadow: 1px 1px 0 #3D4544 !important;}
+.page-sidebar .sidebar-menu a {color:#fff !important;}
+.page-sidebar .sidebar-menu>li>a {border-top: 1px solid #4a4c4c !important;}
+.page-sidebar .sidebar-menu li.active>a {background-color: #525656 !important;}
+.page-sidebar .sidebar-menu>li:last-child>a {border-bottom: 1px solid #4a4c4c !important;}
+.page-sidebar .sidebar-menu>li:first-child>a {border-top: 1px solid #4a4c4c !important;}
 .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area section h2 span {font-weight: 700;}
-.page-sidebar .sidebar-menu>li>a:hover {background-color: #eeeeee !important;}
+.page-sidebar .sidebar-menu>li>a:hover {background-color: #525656 !important;}
 .page-sidebar .sidebar-menu>li>.submenu {box-shadow: none !important;}
+.page-sidebar .sidebar-menu a:hover {color:#fff !important;}
+.page-sidebar .sidebar-header-wrapper .searchinput {    background-color: #5f625e !important;border: 1px solid #3d4544 !important;}
 .navbar .navbar-inner .navbar-header .navbar-account .account-area>li .dropdown-menu.dropdown-login-area>li.edit {text-align: center}
 .header-right {display: initial;}
 .header-right a{margin-top: 3px;float: right;margin-right: 5px;}
@@ -126,6 +148,15 @@
 #overview .form-horizontal .control-label{font-weight: 700;text-align: left;}
 /* End of  profile settings */
 /* All screen */
+.view-body-form .form-group {
+    margin-bottom: 5px !important;
+}
+.view-body-form .form-control-static {
+    min-height: 25px !important;
+}
+.cust-hr{border-top:1px dashed rgba(0,0,0,.2) !important;}
+.month-color{color:#37948e;}
+.employee-card{font-size: 13px !important;}
 .mrg-btm-10{margin-bottom: 10px !important;}
 .mrg-top-25{margin-top:25px !important;}
 .mrg-top-10{margin-top:10px !important}
@@ -161,8 +192,23 @@
 	margin-bottom: 25px;
 }
 .scroll-employee{height: 350px;}
-.scroll-client{height: 350px;}
-.scroll-admin{height: 270px;}
+.scroll-client{height: 418px;}
+.scroll-admin{height: 335px;}
+textarea{resize: none;}
+.tickets-container .tickets-list .ticket-item-green {border: 1px solid #43ce7b;border-radius: 0px !important}
+.tickets-container .tickets-list .ticket-item-red {border: 1px solid #ee4036;border-radius: 0px !important}
+.tickets-container .tickets-list .ticket-item-yellow {border: 1px solid #ffce55;border-radius: 0px !important}
+.ticket-approve{position: absolute;top: -1px;left: -1px;height: 14px;width: 14px;background-color: #fff;}
+.ticket-rejected{position: absolute;top: -1px;left: -1px;height: 14px;width: 14px;background-color: #fff;}
+.ticket-info{position: absolute;top: -1px;left: -1px;height: 16px;width: 15px;background-color: #fff;}
+.lbl-pad-top {padding-top:0px !important}
+.lbl-pad-top-btm {padding-top:0px !important;padding-bottom: 0px !important;}
+.profile-overview .form-control-static {min-height: 25px !important;}
+.task-container .tasks-list .task-item .task-body {top:45px !important;}
+.task-container .tasks-list .task-item {height:132px !important;}
+.task-container .tasks-list .task-item .task-creator {top: 95px !important}
+.task-container .tasks-list .task-item .task-assignedto {top: 95px !important}
+.modal-body button{text-align: center !important}
 .force-overflow
 {
 	min-height: 450px;
@@ -218,38 +264,39 @@
 .form-title {color: #43ce7c !important;}
 .dash-card {padding:5px;background-color: #fff;margin-bottom:20px;overflow: hidden;box-shadow: 0 0 4px rgba(0,0,0,.3);}
 .dash-card-yellow {
-    padding: 6px 0px 0px 15px;
+    /* padding: 6px 0px 0px 15px;
     background-color: #face54;
     width: 50px;
     color: #fff;
     height: 50px;
-    font-size: 25px;
+    font-size: 25px; */
     float: left;
     box-shadow: 5px 5px 5px #ccc;
 }
 .dash-card-green {
-    padding: 6px 0px 0px 15px;
-    background-color: #43ce7c;
-    width: 50px;
+    /* padding: 6px 0px 0px 15px;
+    /* background-color: #43ce7c; */
+    /* width: 50px;
     color: #fff;
     height: 50px;
-    font-size: 25px;
+    font-size: 25px; */
     float: left;
     box-shadow: 5px 5px 5px #ccc;
 }
 .dash-card-red {
-    padding: 6px 0px 0px 15px;
+    /* padding: 6px 0px 0px 15px;
     background-color: #f66e52;
     width: 50px;
     color: #fff;
     height: 50px;
-    font-size: 25px;
+    font-size: 25px; */
     float: left;
     box-shadow: 5px 5px 5px #ccc;
 }
-.dash-card-green {
-    padding: 6px 0px 0px 15px;
-    background-color: #43ce7c;
+.dash-card-orange {
+    padding: 6px 0px 0px 12px;
+    /* background-color: #43ce7c; */
+
     width: 50px;
     color: #fff;
     height: 50px;
@@ -373,7 +420,7 @@
   opacity: 0;
 }
 /* end of upload photo */
-.switch {
+.switch-btn {
 	position: relative;
 	display: block;
 	vertical-align: top;
@@ -514,65 +561,25 @@
 }
 
 /* chat css */
-.chat
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.chat li
-{
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px dotted #B3A9A9;
-}
-
-.chat li.left .chat-body
-{
-    margin-left: 60px;
-}
-
-.chat li.right .chat-body
-{
-    margin-right: 60px;
-}
-
-
-.chat li .chat-body p
-{
-    margin: 0;
-    color: #777777;
-}
-
-.panel .slidedown .glyphicon, .chat .glyphicon
-{
-    margin-right: 5px;
-}
-
-.panel-body
-{
-    overflow-y: scroll;
-    height: 250px;
-    width:100%;
-}
-
-::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar
-{
-    width: 12px;
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
-}
 
 /* end of chat css */
+
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+  .mbl-pad-lft-15{padding-left:15px !important;}
+  .mbl-mrg-top-10{margin-top:10px;}
+  .mbl-row{margin-left:0px !important;margin-right:0px !important;}
+  .profile-container .profile-header {margin: 15px 0px 0 !important;}
+  .profile-container .profile-header .profile-info{padding: 15px 10px 20px 10px !important;}
+}
+
+
+/* Media screens */
+
+
+
+/* 29-03-18 CSS Sulthan */
+
+.forgotpwd .modal-dialog .modal-body {overflow:hidden;}
+.loginbox-forgot a {background-color:transparent !important; border:none; padding:0px; }
+.loginbox-forgot a:hover, .loginbox-forgot a:focus, .loginbox-forgot a:active {background-color:transparent !important;}

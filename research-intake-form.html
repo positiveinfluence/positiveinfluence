@@ -52,7 +52,7 @@
         <div class="navbar-header pull-left">
           <a href="#" class="navbar-brand">
             <small>
-              <img src="assets/img/logo.png" alt="" />
+              <img src="assets/img/logo-color.png" alt="" />
             </small>
           </a>
         </div>
@@ -366,14 +366,8 @@
         </li>
         <li>
           <a href="client-view-orders.html">
-            <i class="menu-icon fa fa-eye red"></i>
+            <i class="menu-icon fa fa-eye yellow"></i>
             <span class="menu-text"> View Orders </span>
-          </a>
-        </li>
-        <li>
-          <a href="client-profile.html">
-            <i class="menu-icon glyphicon glyphicon-user yellow"></i>
-            <span class="menu-text"> View Profile </span>
           </a>
         </li>
       </ul>
@@ -621,177 +615,296 @@
       <!-- Page Breadcrumb -->
       <div class="page-breadcrumbs">
         <ul class="breadcrumb">
-          <li>
+          <li class="active">
             <i class="fa fa-home"></i>
-            <a href="#">Home</a>
+            <a href="#">Research Intake Form</a>
           </li>
-          <li class="active">Research Intake Form</li>
         </ul>
       </div>
       <!-- /Page Breadcrumb -->
-      <!-- Page Header -->
-      <div class="page-header position-relative">
-        <div class="header-title">
-          <h1 class="theme-color">
-            Research Intake Form
-          </h1>
-        </div>
-        <!-- <div class="header-right">
-        <a type="submit" href="upload/Research Intake Form.pdf" target="_blank" class="btn cust-btn"><i class="icon fa fa-download"></i> Research Intake Form</a>
 
-      </div> -->
-      <!--Header Buttons
-      <div class="header-buttons">
-      <a class="sidebar-toggler" href="#">
-      <i class="fa fa-arrows-h"></i>
-    </a>
-  </div>
-  Header Buttons End-->
-</div>
-<!-- /Page Header -->
-<!-- Page Body -->
-<div class="page-body">
-  <div class="row">
-    <div class="col-md-12 col-lg-12">
-      <div class="page-view">
-        <form role="form">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Name</label>
+      <!-- Page Body -->
+      <div class="page-body">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="page-view">
+              <div class="form-title">
+                Reseach Intake Form
+              </div>
+              <form role="form">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Name</label>
+                      <span class="input-icon icon-right">
+                        <input type="text" class="form-control" data-bv-notempty="true"
+                        data-bv-notempty-message="The first name is required and cannot be empty" >
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Company</label>
+                      <span class="input-icon icon-right">
+                        <input type="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Subject Name</label>
+                      <span class="input-icon icon-right">
+                        <input type="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Email</label>
+                      <span class="input-icon icon-right">
+                        <input type="email" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Telephone Number</label>
+                      <span class="input-icon icon-right">
+                        <input =="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">select dates</label>
+                      <span class="input-icon icon-right">
+                        <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy">
+                        <i class="fa fa-calendar"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Product Categories</label>
+                      <select class="form-control" onchange="changeProduct(this.id)" id="productCategories">
+                        <optgroup label="Automitive">
+                          <option>Select</option>
+                          <option>Vehicles</option>
+                          <option>Others</option>
+                        </optgroup>
+                        <optgroup label="Beverage">
+                          <option>Spirits</option>
+                          <option>Wine</option>
+                          <option>Beer</option>
+                          <option>Malternatives</option>
+                          <option>Sports Drink</option>
+                          <option>Non-Alcoholic, Child-Focused</option>
+                          <option>Non-Alcoholic</option>
+                        </optgroup>
+                        <optgroup label="Consumer Durables">
+                          <option>Electronics / Technology</option>
+                          <option>Homewares</option>
+                          <option>Furniture & Lighting</option>
+                          <option>Toys</option>
+                          <option>Clothing (Accessories)</option>
+                          <option>Clothing (General)</option>
+                          <option>Clothing (Athletic)</option>
+                          <option>Home Appliance</option>
+                          <option>Other Durable Goods</option>
+                        </optgroup>
+                        <optgroup label="Consumer Services">
+                          <option>Legal</option>
+                          <option>Financial & Banking</option>
+                          <option>B2B Technology</option>
+                          <option>Consultancies & Professional Services</option>
+                          <option>Insurance (non-Healthcare)</option>
+                          <option>Telecommunications</option>
+                          <option>Public Education</option>
+                          <option>Private Education</option>
+                          <option>Veterinary</option>
+                          <option>Medical & Healthcare</option>
+                          <option>Energy</option>
+                          <option>Other Business Services</option>
+                          <option>Other Consumer Services</option>
+                        </optgroup>
+                        <optgroup label="FMCG">
+                          <option>Beauty</option>
+                          <option>Cleaning Products</option>
+                          <option>Other Household Goods</option>
+                          <option>Other FMCG</option>
+                        </optgroup>
+                        <optgroup label="Food">
+                          <option>Candy</option>
+                          <option>Candy, Child-Focused</option>
+                          <option>Raw & Industry-Specific</option>
+                          <option>Packaged</option>
+                          <option>Child-Focused</option>
+                        </optgroup>
+                        <optgroup label="Healthcare">
+                          <option>Perscription Medication</option>
+                          <option>OTC Oral Medications</option>
+                          <option>OTC Applications </option>
+                          <option>Vitamins & Nutraceuticals</option>
+                          <option>OTC Products & Devices</option>
+                          <option>Insurance</option>
+                          <option>Veterinary</option>
+                          <option>Health & Wellness Tech</option>
+                        </optgroup>
+                        <optgroup label="Leisure">
+                          <option>Live Events</option>
+                          <option>Museume & Galleries</option>
+                          <option>Gambling</option>
+                          <option>Sports</option>
+                          <option>Gaming</option>
+                          <option>Other Recreation</option>
+                        </optgroup>
+                        <optgroup label="Media / Entertainment">
+                          <option>Music</option>
+                          <option>Film</option>
+                          <option>Television</option>
+                          <option>Publications & Media</option>
+                          <option>Books</option>
+                          <option>News</option>
+                          <option>Digital Platforms</option>
+                          <option>Other Media</option>
+                        </optgroup>
+                        <optgroup label="Not-for-Profit">
+                          <option>Government</option>
+                          <option>Public Information</option>
+                          <option>Other Not-for-Profit</option>
+                          <option>Military</option>
+                          <option>Charities</option>
+                          <option>Non-Profit</option>
+                          <option>Advocacy</option>
+                        </optgroup>
+                        <optgroup label="Retail">
+                          <option>Retail</option>
+                          <option>eCommerce</option>
+                          <option>Restaurants</option>
+                          <option>Fast Food</option>
+                        </optgroup>
+                        <optgroup label="Travel">
+                          <option>Travel</option>
+                          <option>Tourism</option>
+                          <option>Transportation</option>
+                        </optgroup>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-4" id="specificDetails">
+                    <div class="form-group">
+                      <label for="inputsm">Specific Details</label>
+                      <span class="input-icon icon-right">
+                        <input =="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Service Type</label>
+                      <select class="form-control" name="country" data-bv-field="country">
+                        <option value="">Select</option>
+                        <option value="">IT</option>
+                        <option value="">Business</option>
+                        <option value="">Banking</option>
+                        <option value="">Education</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Primary Competitors</label>
+                      <span class="input-icon icon-right">
+                        <input =="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Address</label>
+                      <span class="input-icon icon-right">
+                        <textarea class="form-control" rows="4" id="form-field-8"></textarea>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Billing Address</label>
+                      <span class="input-icon icon-right">
+                        <textarea class="form-control" rows="4" id="form-field-8"></textarea>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Subject's Social Media Sites</label>
+                      <span class="input-icon icon-right">
+                        <textarea class="form-control" rows="4" id="form-field-8"></textarea>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label for="inputsm">Briefly describe the data points are you looking to have studied</label>
+                      <span class="input-icon icon-right">
+                        <textarea class="form-control" rows="6" id="form-field-8"></textarea>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label for="inputsm">Additional Category to be examined - additional fees may apply</label>
+                      <span class="input-icon icon-right">
+                        <input type="text" class="form-control">
+                      </span>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="colored-primary" id="terms-conditions" checked>
+                        <span class="text darkgray">Is the Product/service targeted towards children below 18 years of age?</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                    <div class="upload-btn-wrapper">
+                      <button class="upload-btn">Upload Photo</button>
+                      <input type="file" name="myfile" onchange="readURL(this);"/>
+                    </div>
+                    <p id="image-name" class="upload-title"></p>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="upload-img-area" style="">
+                      <img id="blah" src="http://placehold.it/180" alt="your image" class="img-responsive"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!-- <div class="col-md-3">
+                  <button class="btn cust-btn" id="request-more">Request More Information</button>
+                </div>
+                <div class="col-md-6">
+                <div class="form-group" id="additional-info">
+                <label for="inputsm">Additional Information</label>
                 <span class="input-icon icon-right">
-                  <input type="text" class="form-control">
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Company</label>
-                <span class="input-icon icon-right">
-                  <input type="text" class="form-control">
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Subject Name</label>
-                <span class="input-icon icon-right">
-                  <input type="text" class="form-control">
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Email</label>
-                <span class="input-icon icon-right">
-                  <input type="email" class="form-control">
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Telephone Number</label>
-                <span class="input-icon icon-right">
-                  <input type="text" class="form-control">
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">DOB</label>
-                <span class="input-icon icon-right">
-                  <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy" placeholder="Birth Date">
-                  <i class="fa fa-calendar"></i>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">&nbsp;</label>
-                <select class="form-control" name="country" data-bv-field="country">
-                  <option value="">Select Categories</option>
-                  <option value="">IT</option>
-                  <option value="">Business</option>
-                  <option value="">Banking</option>
-                  <option value="">Education</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">&nbsp;</label>
-                <select class="form-control" name="country" data-bv-field="country">
-                  <option value="">Service Type</option>
-                  <option value="">IT</option>
-                  <option value="">Business</option>
-                  <option value="">Banking</option>
-                  <option value="">Education</option>
-                </select>
-              </div>
+                <textarea class="form-control" rows="3" id="form-field-8"></textarea>
+              </span>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Address</label>
-                <span class="input-icon icon-right">
-                  <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Billing Address</label>
-                <span class="input-icon icon-right">
-                  <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                </span>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label for="inputsm">Subject's Social Media Sites :</label>
-                <span class="input-icon icon-right">
-                  <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="form-group">
-                <label for="inputsm">Briefly describe the data points are you looking to have studied :</label>
-                <span class="input-icon icon-right">
-                  <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="form-group">
-                <label for="inputsm">Additional Category to be examined - additional fees may apply :</label>
-                <span class="input-icon icon-right">
-                  <input type="text" class="form-control">
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-3 text-center">
-              <div class="upload-btn-wrapper">
-                <button class="upload-btn">Upload Photo</button>
-                <input type="file" name="myfile" onchange="readURL(this);"/>
-              </div>
-              <p id="image-name" class="upload-title"></p>
-            </div>
-            <div class="col-sm-3">
-              <div class="upload-img-area" style="">
-                <img id="blah" src="http://placehold.it/180" alt="your image" class="img-responsive"/>
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
-          <button type="submit" class="btn  cust-btn text-center">Save</button>
+        </div>-->
+        <hr class="cust-hr"/>
+        <div class="text-center">
+          <button type="button" class="btn  cust-btn text-center">Submit</button>
         </div>
-        </form>
-      </div>
+      </form>
     </div>
   </div>
+</div>
 </div>
 <!-- /Page Body -->
 </div>
@@ -820,7 +933,13 @@
 <script src="assets/js/charts/flot/jquery.flot.js"></script>
 <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
 
+<!--Jquery Select2-->
+<script src="assets/js/select2/select2.js"></script>
+<!--Bootstrap Tags Input-->
+<script src="assets/js/tagsinput/bootstrap-tagsinput.js"></script>
 
+<!--Bootstrap Date Picker-->
+<script src="assets/js/datetime/bootstrap-datepicker.js"></script>
 
 <!-- jQuery File Upload Dependencies -->
 <script src="assets/js/upload/jquery.knob.js"></script>
@@ -828,9 +947,28 @@
 <script src="assets/js/upload/jquery.iframe-transport.js"></script>
 <script src="assets/js/upload/jquery.fileupload.js"></script>
 <script src="assets/js/upload/script.js"></script>
+<!--Page Related Scripts-->
+<script src="assets/js/validation/bootstrapValidator.js"></script>
 
 <!-- upload photo -->
 <script>
+$(document).ready(function(){
+  $("#specificDetails").hide(); // hide productCategories details
+  $("#request-more").click(function(event){
+    event.preventDefault();
+    $("#additional-info").toggle();
+  });
+});
+</script>
+<script>
+//--Bootstrap Date Picker--
+
+
+
+
+$('.date-picker').datepicker();
+
+
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
@@ -844,7 +982,21 @@ function readURL(input) {
     $("#image-name").append(input.files[0].name)
   }
 }
+
+
 </script>
 <!-- end of upload photo -->
+<script>
+/* product-categories change function*/
+function changeProduct(id){
+  var thisvalue = $("#"+id).find("option:selected").text();
+  if(thisvalue=="Others" || thisvalue=="Other Durable Goods" || thisvalue=="Other Household Goods" || thisvalue=="Other FMCG" || thisvalue=="OTC Applications" || thisvalue=="Vitamins & Nutraceuticals" || thisvalue=="OTC Products & Devices" || thisvalue=="Other Recreation" || thisvalue=="Other Media" || thisvalue=="Other Not-for-Profit" || thisvalue=="Non-Profit"){
+    $("#specificDetails").show();
+  }
+  else{
+    $("#specificDetails").hide();
+  }
+}
+</script>
 <!--  /Body -->
 </html>
