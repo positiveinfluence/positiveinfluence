@@ -32,7 +32,7 @@
 <!--Body-->
 <body>
   <div class="login-container animated fadeInDown">
-    <div class="loginbox bg-darkgray">
+    <div class="loginbox bg-darkgray" id="login">
       <div class="log-reg-img">
         <img src="assets/img/logo-color.png" class="img-responsive">
         <hr class="login-hr" />
@@ -45,16 +45,16 @@
         <input type="text" class="form-control" placeholder="Password" />
       </div>
       <div class="cust-overflow">
-      <div class="loginbox-remember">
+      <!-- <div class="loginbox-remember">
         <div class="checkbox">
           <label>
             <input type="checkbox" class="colored-primary" id="terms-conditions">
             <span class="text white">Remember Password</span>
           </label>
         </div>
-      </div>
-      <div class="loginbox-forgot">
-        <a type="submit" href="" data-toggle="modal" data-target=".forgotpwd" id="CustBtn" class="btn cust-btn">Forgot Password?</a>
+      </div> -->
+      <div class="loginbox-forgot mrg-btm-10">
+        <a id="CustBtn" class="btn cust-btn">Forgot Password?</a>
       </div>
     </div>
       <div class="loginbox-submit text-center">
@@ -65,37 +65,27 @@
         <div class="or">OR</div>
       </div>
       <div class="loginbox-signup">
-        <span class="white">Client ?</span> <a href="client-register.html">Register</a>
+        <span class="white"><a href="client-register.html">Register Here</a>
       </div>
     </div>
-
-  </div>
-  <div class="modal fade forgotpwd in" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                      <h4 class="modal-title" id="mySmallModalLabel">Forgot Password</h4>
-                  </div>
-                  <div class="modal-body">
-                    <form class="">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="inputsm">Email</label>
-                          <span class="input-icon icon-right">
-                            <input type="email" class="form-control">
-                          </span>
-                        </div>
-                        <div class="text-center">
-                        <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
-                      </div>
-                      </div>
-                    </form>
-                  </div>
-              </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
+    <div class="loginbox bg-darkgray" id="forgot">
+      <div class="log-reg-img">
+        <img src="assets/img/logo-color.png" class="img-responsive">
+        <hr class="login-hr" />
       </div>
+      <div class="loginbox-title theme-color">Forgot Password</div>
+      <div class="loginbox-textbox">
+        <input type="text" class="form-control" placeholder="Email" />
+      </div>
+      <div class="cust-overflow">
+
+      </div>
+      <div class="loginbox-submit text-center mrg-top-10">
+        <input type="button" class="btn btn-block cust-btn" value="Submit">
+      </div>
+    </div>
+  </div>
+
 
   <!--Basic Scripts-->
   <script src="assets/js/jquery.min.js"></script>
@@ -104,7 +94,21 @@
 
   <!--Beyond Scripts-->
   <script src="assets/js/beyond.js"></script>
-
+<script>
+$(document).ready(function(){
+  $("#forgot").hide();
+  $("#CustBtn").click(function()
+{
+  $("#forgot").show();
+  $("#login").hide();
+})
+$("#Forgot-btn").click(function()
+{
+$("#forgot").hide();
+$("#login").show();
+})
+})
+</script>
 
 </body>
 <!--Body Ends-->

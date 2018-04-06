@@ -364,12 +364,6 @@
             <span class="menu-text"> Research Intake Form </span>
           </a>
         </li>
-        <li>
-          <a href="client-view-orders.html">
-            <i class="menu-icon fa fa-eye yellow"></i>
-            <span class="menu-text"> View Orders </span>
-          </a>
-        </li>
       </ul>
       <!-- /Sidebar Menu -->
     </div>
@@ -628,12 +622,13 @@
         <div class="row">
           <div class="col-md-12 col-lg-12">
             <div class="page-view">
-              <div class="form-title">
-                Reseach Intake Form
-              </div>
+
               <form role="form">
+                <div class="form-title">
+                  Reseach Intake Form
+                </div>
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-6">
                     <div class="form-group">
                       <label for="inputsm">Name</label>
                       <span class="input-icon icon-right">
@@ -642,7 +637,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-6">
                     <div class="form-group">
                       <label for="inputsm">Company</label>
                       <span class="input-icon icon-right">
@@ -650,11 +645,13 @@
                       </span>
                     </div>
                   </div>
+                </div>
+                <div class="row">
                   <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">Subject Name</label>
+                      <label for="inputsm">Address</label>
                       <span class="input-icon icon-right">
-                        <input type="text" class="form-control">
+                        <textarea class="form-control" rows="5" id="form-field-8"></textarea>
                       </span>
                     </div>
                   </div>
@@ -665,8 +662,6 @@
                         <input type="email" class="form-control">
                       </span>
                     </div>
-                  </div>
-                  <div class="col-sm-4">
                     <div class="form-group">
                       <label for="inputsm">Telephone Number</label>
                       <span class="input-icon icon-right">
@@ -676,13 +671,26 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">select dates</label>
+                      <label for="inputsm">Billing Address</label>
                       <span class="input-icon icon-right">
-                        <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy">
-                        <i class="fa fa-calendar"></i>
+                        <textarea class="form-control" rows="5" id="form-field-8"></textarea>
                       </span>
                     </div>
                   </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Subject Name</label>
+                      <span class="input-icon icon-right">
+                        <input type="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+
                   <div class="col-sm-4">
                     <div class="form-group">
                       <label for="inputsm">Product Categories</label>
@@ -792,6 +800,7 @@
 
                     </div>
                   </div>
+
                   <div class="col-sm-4" id="specificDetails">
                     <div class="form-group">
                       <label for="inputsm">Specific Details</label>
@@ -802,61 +811,15 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">Service Type</label>
-                      <select class="form-control" name="country" data-bv-field="country">
-                        <option value="">Select</option>
-                        <option value="">IT</option>
-                        <option value="">Business</option>
-                        <option value="">Banking</option>
-                        <option value="">Education</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Primary Competitors</label>
+                      <label for="inputsm">Price</label>
                       <span class="input-icon icon-right">
                         <input =="text" class="form-control">
                       </span>
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                  <div class="row">
                   <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Address</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Billing Address</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Subject's Social Media Sites</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="4" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="form-group">
-                      <label for="inputsm">Briefly describe the data points are you looking to have studied</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="6" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
                     <div class="form-group">
                       <label for="inputsm">Additional Category to be examined - additional fees may apply</label>
                       <span class="input-icon icon-right">
@@ -870,19 +833,65 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-3 text-center">
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label for="inputsm">Subject's Social Media Sites</label>
+                      <span class="input-icon icon-right">
+                        <textarea class="form-control" rows="5" id="form-field-8"></textarea>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">select dates</label>
+                      <span class="input-icon icon-right">
+                        <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy">
+                        <i class="fa fa-calendar"></i>
+                      </span>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputsm">Briefly describe the data points are you looking to have studied</label>
+                      <span class="input-icon icon-right">
+                        <textarea class="form-control" rows="6" id="form-field-8"></textarea>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Service Type</label>
+                      <select class="form-control" name="country" data-bv-field="country">
+                        <option value="">Select</option>
+                        <option value="">IT</option>
+                        <option value="">Business</option>
+                        <option value="">Banking</option>
+                        <option value="">Education</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputsm">Primary Competitors</label>
+                      <span class="input-icon icon-right">
+                        <input =="text" class="form-control">
+                      </span>
+                    </div>
+                    <div class="text-center">
                     <div class="upload-btn-wrapper">
                       <button class="upload-btn">Upload Photo</button>
                       <input type="file" name="myfile" onchange="readURL(this);"/>
                     </div>
                     <p id="image-name" class="upload-title"></p>
                   </div>
+                  </div>
                   <div class="col-sm-3">
                     <div class="upload-img-area" style="">
                       <img id="blah" src="http://placehold.it/180" alt="your image" class="img-responsive"/>
                     </div>
                   </div>
+
                 </div>
+
 
                 <div class="row">
                   <!-- <div class="col-md-3">

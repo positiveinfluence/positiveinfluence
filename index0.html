@@ -3,7 +3,7 @@
 <!-- Head -->
 <head>
     <meta charset="utf-8" />
-    <title>Jobs</title>
+    <title>Dashboard</title>
 
     <meta name="description" content="user profile" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +54,7 @@
                 <!-- /Navbar Barnd -->
                 <!-- Sidebar Collapse -->
                 <div class="sidebar-collapse" id="sidebar-collapse">
-                    <i class="collapse-icon fa fa-bars"></i>
+                    <i class="collapse-icon fa fa-caret-down"></i>
                 </div>
                 <!-- /Sidebar Collapse -->
                 <!-- Account Area and Settings --->
@@ -301,7 +301,7 @@
                                 <!--Login Area Dropdown-->
                                 <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                     <li class="username"><a>Admin</a></li>
-                                    <li class="email"><a>admin.com</a></li>
+                                    <li class="email"><a>admin@pir.com</a></li>
                                     <!--Avatar Area-->
 
                                     <li class="edit">
@@ -332,7 +332,7 @@
             <!-- Page Sidebar -->
             <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
-                <div class="sidebar-header-wrapper">
+              <div class="sidebar-header-wrapper">
                     <input type="text" class="searchinput" />
                     <i class="searchicon fa fa-search"></i>
                     <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
@@ -341,7 +341,7 @@
                 <!-- Sidebar Menu -->
                 <ul class="nav sidebar-menu">
                   <!--Dashboard-->
-                  <li>
+                  <li class="active">
                     <a href="index.html">
                       <i class="menu-icon glyphicon glyphicon-dashboard red"></i>
                       <span class="menu-text"> Dashboard </span>
@@ -359,10 +359,10 @@
                       <span class="menu-text"> Clients </span>
                     </a>
                   </li>
-                  <li class="active">
-                    <a href="jobs.html">
+                  <li>
+                    <a href="configuration.html">
                       <i class="menu-icon fa fa-info pink"></i>
-                      <span class="menu-text"> Jobs </span>
+                      <span class="menu-text"> Configuration </span>
                     </a>
                   </li>
                   <li>
@@ -618,7 +618,7 @@
                     <ul class="breadcrumb">
                         <li class="active">
                             <i class="fa fa-home"></i>
-                            <a href="#">Jobs</a>
+                            <a href="#">Dashboard</a>
                         </li>
                     </ul>
                 </div>
@@ -627,91 +627,343 @@
                 <!-- Page Body -->
                 <div class="page-body">
 
+
                   <div class="row">
-                      <div class="col-md-12 col-lg-12">
-                        <div class="page-view">
-                          <div class="form-title">
-                                    Jobs Information
-                                  </div>
-                          <div class="table-responsive mrg-top-10">
-                            <table class="table table-striped table-design employee-table">
-                              <thead>
-                                <tr>
-                                  <th>Job Title</th>
-                                  <th>Job Description</th>
-                                  <th>Assigned to</th>
-                                  <th>Status</th>
-                                  <th>Action</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Deep Employee Report</td>
-                                  <td>Deep Employment Report</td>
-                                  <td>James</td>
-                                  <td>
-                                    <label class="switch-btn switch-flat">
-                                    	<input class="switch-input" type="checkbox" />
-                                    	<span class="switch-label" data-on="Active" data-off="Inactive"></span>
-                                    	<span class="switch-handle"></span>
-                                    </label>
-                                  </td>
-                                  <td>
-                                      <a href="job-description.html" data-toggle="tooltip" data-placement="top" data-original-title="View" class="fa fa-eye edit edit-fa"></a>
-                                      <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Delete" class="fa fa-trash delete edit-fa"></a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                    <td>Brand Endorsement Report</td>
-                                  <td>Brand Endorsement Report</td>
-                                  <td>Roy</td>
-                                  <td>
-                                    <label class="switch-btn switch-flat">
-                                    	<input class="switch-input" type="checkbox" />
-                                    	<span class="switch-label" data-on="Active" data-off="Inactive"></span>
-                                    	<span class="switch-handle"></span>
-                                    </label>
-                                  </td>
-                                  <td>
-                                      <a href="job-description.html" data-toggle="tooltip" data-placement="top" data-original-title="View" class="fa fa-eye edit edit-fa"></a>
-                                      <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Delete" class="fa fa-trash delete edit-fa"></a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>Smith Employee Profile Report</td>
-                                  <td>Smith Employee Profile Report</td>
-                                  <td>Riya</td>
-                                  <td>
-                                    <label class="switch-btn switch-flat">
-                                    	<input class="switch-input" type="checkbox" />
-                                    	<span class="switch-label" data-on="Active" data-off="Inactive"></span>
-                                    	<span class="switch-handle"></span>
-                                    </label>
-                                  </td>
-                                  <td>
-                                      <a href="job-description.html" data-toggle="tooltip" data-placement="top" data-original-title="View" class="fa fa-eye edit edit-fa"></a>
-                                      <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Delete" class="fa fa-trash delete edit-fa"></a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                    <div class="col-sm-7 five-three">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="dash-card">
+                            <div class="dash-content">
+                              <div class="dash-card-yellow">
+                                <img src="assets/img/card-icon-1.png" class="img-responsive">
+                              </div>
+                              <div class="dash-card-right">
+                                <h3 class="yellow employee-card">Total Orders</h3>
+                                <h4>250</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="dash-card">
+                            <div class="dash-content">
+                              <div class="dash-card-green">
+                                <img src="assets/img/card-icon-2.png" class="img-responsive">
+                              </div>
+                              <div class="dash-card-right">
+                                <h3 class="theme-color employee-card">Apporved Orders</h3>
+                                <h4>150</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="dash-card">
+                            <div class="dash-content">
+                              <div class="dash-card-red">
+                                <img src="assets/img/card-icon-3.png" class="img-responsive">
+                              </div>
+                              <div class="dash-card-right">
+                                <h3 class="red employee-card">Rejected Orders</h3>
+                                <h4>100</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- end inner row -->
+                      </div>
+                    </div>
+                    <div class="col-sm-5 five-two">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="dash-card">
+                            <div class="dash-content">
+                              <div class="dash-card-green">
+                                <img src="assets/img/card-icon-6.png" class="img-responsive">
+                              </div>
+                              <div class="dash-card-right">
+                                <h3 class="purple employee-card" style="padding-top:15px">Weekly Report</h3>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="dash-card">
+                            <div class="dash-content">
+                              <div class="dash-card-green">
+                                <img src="assets/img/card-icon-5.png" class="img-responsive">
+                              </div>
+                              <div class="dash-card-right">
+                                <h3 class="month-color employee-card" style="padding-top:15px">Monthly Report</h3>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- end inner row -->
+                    </div>
+                  </div>​<!-- end outer row -->
+
+
+
+
+
+
+
+                  <div class="clearfix"></div>
+                  <div class="row">
+                    <div class="col-lg-8 col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="widget">
+                            <div class="widget-header bordered-bottom bordered-themesecondary">
+                              <i class="widget-icon fa fa-tags themesecondary"></i>
+                              <span class="widget-caption themesecondary">Notifications</span>
+                            </div><!--Widget Header-->
+                            <div class="widget-body  no-padding">
+                              <div class="tickets-container">
+                                <ul class="tickets-list scrollbar style-1">
+                                  <li class="ticket-item ticket-item-green">
+                                    <div class="row">
+                                      <div class="ticket-user col-lg-7 col-sm-12">
+                                        <img src="assets/img/user.png" class="user-avatar">
+                                        <span class="user-name">Adam Johnson</span>
+                                        <span class="user-at">at</span>
+                                        <span class="user-company">Microsoft</span>
+                                      </div>
+                                      <div class="ticket-time  col-lg-3 col-sm-6 col-xs-12">
+                                        <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                        <i class="fa fa-clock-o"></i>
+                                        <span class="time">1 Hours Ago</span>
+                                      </div>
+                                      <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                        <span class="divider hidden-xs"></span>
+                                        <span class="type">Payment</span>
+                                      </div>
+                                      <div class="ticket-approve">
+                                        <img src="assets/img/approve-icon-1.png" class="img-responsive">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="ticket-item ticket-item-green">
+                                    <div class="row">
+                                      <div class="ticket-user col-lg-7 col-sm-12">
+                                        <img src="assets/img/user.png" class="user-avatar">
+                                        <span class="user-name">Divyia Phillips</span>
+                                        <span class="user-at">at</span>
+                                        <span class="user-company">Dribbble</span>
+                                      </div>
+                                      <div class="ticket-time  col-lg-3 col-sm-6 col-xs-12">
+                                        <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                        <i class="fa fa-clock-o"></i>
+                                        <span class="time">3 Hours Ago</span>
+                                      </div>
+                                      <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                        <span class="divider hidden-xs"></span>
+                                        <span class="type">Payment</span>
+                                      </div>
+                                      <div class="ticket-approve">
+                                        <img src="assets/img/approve-icon-1.png" class="img-responsive">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="ticket-item ticket-item-red">
+                                    <div class="row">
+                                      <div class="ticket-user col-lg-7 col-sm-12">
+                                        <img src="assets/img/user.png" class="user-avatar">
+                                        <span class="user-name">Nicolai Larson</span>
+                                        <span class="user-at">at</span>
+                                        <span class="user-company">Google</span>
+                                      </div>
+                                      <div class="ticket-time  col-lg-3 col-sm-6 col-xs-12">
+                                        <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                        <i class="fa fa-clock-o"></i>
+                                        <span class="time">18 Hours Ago</span>
+                                      </div>
+                                      <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                        <span class="divider hidden-xs"></span>
+                                        <span class="type">Issue</span>
+                                      </div>
+                                      <div class="ticket-rejected">
+                                        <img src="assets/img/rejected-icon-1.png" class="img-responsive">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="ticket-item ticket-item-green">
+                                    <div class="row">
+                                      <div class="ticket-user col-lg-7 col-sm-12">
+                                        <img src="assets/img/user.png" class="user-avatar">
+                                        <span class="user-name">Bill Jackson</span>
+                                        <span class="user-at">at</span>
+                                        <span class="user-company">Mabna</span>
+                                      </div>
+                                      <div class="ticket-time  col-lg-3 col-sm-6 col-xs-12">
+                                        <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                        <i class="fa fa-clock-o"></i>
+                                        <span class="time">2 days Ago</span>
+                                      </div>
+                                      <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                        <span class="divider hidden-xs"></span>
+                                        <span class="type">Payment</span>
+                                      </div>
+                                      <div class="ticket-approve">
+                                        <img src="assets/img/approve-icon-1.png" class="img-responsive">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="ticket-item ticket-item-green">
+                                    <div class="row">
+                                      <div class="ticket-user col-lg-7 col-sm-12">
+                                        <img src="assets/img/user.png" class="user-avatar">
+                                        <span class="user-name">Eric Clapton</span>
+                                        <span class="user-at">at</span>
+                                        <span class="user-company">Musicker</span>
+                                      </div>
+                                      <div class="ticket-time  col-lg-3 col-sm-6 col-xs-12">
+                                        <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                        <i class="fa fa-clock-o"></i>
+                                        <span class="time">2 days Ago</span>
+                                      </div>
+                                      <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                        <span class="divider hidden-xs"></span>
+                                        <span class="type">Payment</span>
+                                      </div>
+                                      <div class="ticket-approve">
+                                        <img src="assets/img/approve-icon-1.png" class="img-responsive">
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
 
                         </div>
                       </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                      <div class="widget">
+                        <div class="widget-header bordered-bottom bordered-themeprimary">
+                          <i class="widget-icon fa fa-tasks themeprimary"></i>
+                          <span class="widget-caption themeprimary"> Work Order</span>
+                        </div><!--Widget Header-->
+                        <div class="widget-body no-padding">
+                          <div class="task-container">
+                            <!-- <div class="task-search">
+                            <span class="input-icon">
+                            <input type="text" class="form-control" placeholder="Search Work Order">
+                            <i class="fa fa-search gray"></i>
+                          </span>
+                        </div> -->
+                        <div class="scrollbar style-1 scroll-admin">
+                          <ul class="tasks-list ">
+                            <li class="task-item">
+                              <div class="task-check">
+                                <label>
+                                  <input type="checkbox">
+                                  <span class="text"></span>
+                                </label>
+                              </div>
+                              <div class="task-state">
+                                <span class="label label-yellow">
+                                  In Progress
+                                </span>
+                              </div>
+                              <div class="task-time">1 hour ago</div>
+                              <div class="task-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                              <div class="task-creator"><a href="">Cameron Hetfield</a></div>
+                              <div class="task-assignedto">assigned to you</div>
+                            </li>
+                            <li class="task-item">
+                              <div class="task-check">
+                                <label>
+                                  <input type="checkbox">
+                                  <span class="text"></span>
+                                </label>
+                              </div>
+                              <div class="task-state">
+                                <span class="label label-orange">
+                                  Active
+                                </span>
+                              </div>
+                              <div class="task-time">2 hours ago</div>
+                              <div class="task-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                              <div class="task-creator"><a href="">Behrang Nitsche</a></div>
+                              <div class="task-assignedto">assigned to you</div>
+                            </li>
+                            <li class="task-item">
+                              <div class="task-check">
+                                <label>
+                                  <input type="checkbox">
+                                  <span class="text"></span>
+                                </label>
+                              </div>
+                              <div class="task-state">
+                                <span class="label label-palegreen">
+                                  Approved
+                                </span>
+                              </div>
+                              <div class="task-time">yesterday</div>
+                              <div class="task-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                              <div class="task-creator"><a href="">David Fincher</a></div>
+                              <div class="task-assignedto">assigned to Kim</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!--Widget Body-->
                   </div>
-
                 </div>
+                </div>
+                </div>
+
                 <!-- /Page Body -->
             </div>
             <!-- /Page Content -->
         </div>
         <!-- /Page Container -->
         <!-- Main Container -->
-        <div>
-</div>
-    </div>
 
+    </div>
+    <!-- accept request -->
+    <div class="modal fade accept-request in" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="mySmallModalLabel">Assign job to Employee</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group">
+                  <label for="inputsm">Job Title</label>
+                  <span class="input-icon icon-right">
+                    <input type="text" class="form-control">
+                  </span>
+                </div>
+                <div class="form-group">
+                  <label for="inputsm">Assign To</label>
+                  <select class="form-control" name="country" data-bv-field="country">
+                    <option value=""></option>
+                    <option value="">James</option>
+                    <option value="">Smith</option>
+                    <option value="">Roy</option>
+                    <option value="">David</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <!-- end of accept request -->
     <!--Basic Scripts-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

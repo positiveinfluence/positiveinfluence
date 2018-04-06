@@ -3,7 +3,7 @@
 <!-- Head -->
 <head>
   <meta charset="utf-8" />
-  <title>Employee Report Upload</title>
+  <title>Job Description</title>
 
   <meta name="description" content="user profile" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,6 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
   <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="assets/css/upload.css" rel="stylesheet" />
   <link href="assets/css/custom.css" rel="stylesheet" />
   <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
 
@@ -55,7 +54,7 @@
         <!-- /Navbar Barnd -->
         <!-- Sidebar Collapse -->
         <div class="sidebar-collapse" id="sidebar-collapse">
-          <i class="collapse-icon fa fa-caret-down"></i>
+          <i class="collapse-icon fa fa-bars"></i>
         </div>
         <!-- /Sidebar Collapse -->
         <!-- Account Area and Settings --->
@@ -296,17 +295,17 @@
                 <img src="assets/img/user.png" class="img-responsive">
               </div>
               <section>
-                <h2><span class="profile"><span>Employee</span></span></h2>
+                <h2><span class="profile"><span>Admin</span></span></h2>
               </section>
             </a>
             <!--Login Area Dropdown-->
             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-              <li class="username"><a>Employee</a></li>
-              <li class="email"><a>employee@pir.com</a></li>
+              <li class="username"><a>Admin</a></li>
+              <li class="email"><a>admin.com</a></li>
               <!--Avatar Area-->
 
               <li class="edit">
-                <a href="employee-profile.html" class="pull-right">Edit Profile</a>
+                <a href="profile.html" class="pull-right">Edit Profile</a>
               </li>
 
               <li class="dropdown-footer">
@@ -342,10 +341,22 @@
       <!-- Sidebar Menu -->
       <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li>
-          <a href="employee-index.html">
-            <i class="menu-icon glyphicon glyphicon-home"></i>
+        <li class="active">
+          <a href="client-index.html">
+            <i class="menu-icon glyphicon glyphicon-dashboard red"></i>
             <span class="menu-text"> Dashboard </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-agreement.html">
+            <i class="menu-icon glyphicon glyphicon-wrench green"></i>
+            <span class="menu-text"> Service Agreement </span>
+          </a>
+        </li>
+        <li>
+          <a href="research-intake-form.html">
+            <i class="menu-icon fa fa-file-pdf-o purple"></i>
+            <span class="menu-text"> Research Intake Form </span>
           </a>
         </li>
       </ul>
@@ -595,34 +606,137 @@
         <ul class="breadcrumb">
           <li class="active">
             <i class="fa fa-home"></i>
-            <a href="#">Upload Document</a>
+            <a href="#">Order Description</a>
           </li>
         </ul>
+        <div class="header-right">
+          <a type="submit" href="chat.html" class="btn cust-btn">Chat with Admin / Employee</a>
+        </div>
       </div>
       <!-- /Page Breadcrumb -->
+      <!-- data-toggle="modal" data-target=".accept-request" -->
 
-  <!-- Page Body -->
-  <div class="page-body">
-    <div class="row">
-      <div class="col-md-12 col-lg-12">
-        <div class="page-view">
-          <div class="form-title">
-            Upload Document
-          </div>
-          <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-            <div id="drop">
-              Drop Here
-
-              <a>Browse</a>
-              <input type="file" name="upl" multiple />
+      <!-- Page Body -->
+      <div class="page-body" id="overview">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="page-view  form-horizontal view-body-form">
+              <div class="form-title">
+                Order Description
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Job Title:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">Deep Employee Report</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Job Description:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">Deep Employment Report</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Category:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">Public Information</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Assigned to:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">James</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Email:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">james@pir.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Mobile Number:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">(541) 754-3010</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group">
+                    <label class="control-label col-sm-5 lbl-pad-top" for="email">Status:</label>
+                    <div class="col-sm-7">
+                      <p class="form-control-static lbl-pad-top-btm">Inprogress</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a type="submit" href="chat.html" class="btn cust-btn"><span class="fa fa-money"></span>Proceeded to Pay</a>
+              <div class="form-title">
+                Sub Order Information
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="table-responsive mrg-top-10">
+                    <table class="table table-striped table-design last-child-one">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Sub Order Task</th>
+                          <th>Cost</th>
+                          <th>Effort Hours</th>
+                          <th>Additional Informatin</th>
+                          <th>Acceptance</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>05-03-18</td>
+                          <td>Sub order Task information</td>
+                          <td>$500</td>
+                          <td>60</td>
+                          <td>We are providing additional informatio to proccess data. </td>
+                          <td><div class="checkbox">
+                            <label>
+                              <input type="checkbox" class="colored-primary" id="terms-conditions" checked="">
+                              <span class="text darkgray">Accept suborder</span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>
+                          <a data-toggle="tooltip" data-placement="top" data-original-title="Proceeded to Pay" class="fa fa-money edit edit-fa"></a>
+                        </td>
+                      </tr>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <ul>
-              <!-- The file uploads will be shown here -->
-            </ul>
-          </form>
+          </div>
+          <div class="text-center">
+
+          </div>
+
         </div>
       </div>
     </div>
+
   </div>
   <!-- /Page Body -->
 </div>
@@ -630,7 +744,182 @@
 </div>
 <!-- /Page Container -->
 <!-- Main Container -->
+<div>
+  <!-- accept request -->
+  <div class="modal fade accept-request in" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
 
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="mySmallModalLabel">Assign job to Employee</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="form-group">
+                <label for="inputsm">Job Title</label>
+                <span class="input-icon icon-right">
+                  <input type="text" class="form-control">
+                </span>
+              </div>
+              <div class="form-group">
+                <label for="inputsm">Assign To</label>
+                <select class="form-control" name="country" data-bv-field="country">
+                  <option value=""></option>
+                  <option value="">James</option>
+                  <option value="">Smith</option>
+                  <option value="">Roy</option>
+                  <option value="">David</option>
+                </select>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+  <!-- end of accept request -->
+  <!-- suborder modal -->
+  <div class="modal fade create-suborder in" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="mySmallModalLabel">Sub Order Information</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <div class="form-group">
+              <label for="inputsm">Job Id</label>
+              <span class="input-icon icon-right">
+              <input type="password" class="form-control">
+            </span>
+          </div> -->
+          <div class="form-group">
+            <label for="inputsm">Sub Order Task</label>
+            <span class="input-icon icon-right">
+              <input type="text" class="form-control">
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="inputsm">Cost</label>
+            <span class="input-icon icon-right">
+              <input type="text" class="form-control">
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="inputsm">Effort Hours</label>
+            <span class="input-icon icon-right">
+              <input type="text" class="form-control">
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="inputsm">Additional Information</label>
+            <span class="input-icon icon-right">
+              <input type="text" class="form-control">
+            </span>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>
+<!-- end of suborder modal -->
+<!-- <div class="" style="position:absolute;right:0;bottom:0;">
+<div class="row">
+<div class="col-md-5">
+<div class="panel panel-primary" style="width:300px;">
+<div class="panel-heading" id="accordion" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+<span class="glyphicon glyphicon-comment"></span> Chat
+</div>
+<div class="panel-collapse collapse" id="collapseOne">
+<div class="panel-body">
+<ul class="chat">
+<li class="left clearfix"><span class="chat-img pull-left">
+<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+</span>
+<div class="chat-body clearfix">
+<div class="header">
+<strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+<span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+dolor, quis ullamcorper ligula sodales.
+</p>
+</div>
+</li>
+<li class="right clearfix"><span class="chat-img pull-right">
+<img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+</span>
+<div class="chat-body clearfix">
+<div class="header">
+<small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+<strong class="pull-right primary-font">Bhaumik Patel</strong>
+</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+dolor, quis ullamcorper ligula sodales.
+</p>
+</div>
+</li>
+<li class="left clearfix"><span class="chat-img pull-left">
+<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+</span>
+<div class="chat-body clearfix">
+<div class="header">
+<strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+<span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+dolor, quis ullamcorper ligula sodales.
+</p>
+</div>
+</li>
+<li class="right clearfix"><span class="chat-img pull-right">
+<img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+</span>
+<div class="chat-body clearfix">
+<div class="header">
+<small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+<strong class="pull-right primary-font">Bhaumik Patel</strong>
+</div>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+dolor, quis ullamcorper ligula sodales.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="panel-footer">
+<div class="input-group">
+<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+<span class="input-group-btn">
+<button class="btn btn-warning btn-sm" id="btn-chat">
+Send</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+</div>
 </div>
 
 <!--Basic Scripts-->
@@ -648,13 +937,8 @@
 <script src="assets/js/charts/flot/jquery.flot.js"></script>
 <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
 
-<!-- jQuery File Upload Dependencies -->
-<script src="assets/js/upload/jquery.knob.js"></script>
-<script src="assets/js/upload/jquery.ui.widget.js"></script>
-<script src="assets/js/upload/jquery.iframe-transport.js"></script>
-<script src="assets/js/upload/jquery.fileupload.js"></script>
-<script src="assets/js/upload/script.js"></script>
-
+<!--Page Related Scripts-->
+<script src="assets/js/toastr/toastr.js"></script>
 </body>
 <!--  /Body -->
 </html>
