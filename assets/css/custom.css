@@ -1,3 +1,4 @@
+.page-sidebar.menu-compact .sidebar-menu>li>a .menu-text {background-color: #5f625e !important;}
 .bg-darkgray{background-color: #3D4544 !important;}
 .cust-btn {background-color: #05ce7c !important;color:#fff !important;outline: none !important;}
 .cust-btn:hover, .cust-btn:active, .cust-btn:focus {background-color: #05ce7c !important;color:#fff !important;}
@@ -153,6 +154,8 @@ input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].col
 #overview .form-horizontal .control-label{font-weight: 700;text-align: left;}
 /* End of  profile settings */
 /* All screen */
+.cust-select-ctrl {float:right;margin:2px;}
+.cust-select-ctrl select {    height: 28px !important;padding:0px 12px !important;}
 .view-body-form .form-group {
     margin-bottom: 5px !important;
 }
@@ -190,6 +193,7 @@ input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].col
 }
   .employee-table thead tr th:last-child{width:90px;}
   .last-child-one thead tr th:last-child{width:50px;}
+  .last-child-two thead tr th:last-child{width:62px;}
   .last-child-one tbody tr td .checkbox{padding-top:0px !important}
   .tickets-container .tickets-list .ticket-item .ticket-state {top: -5px !important;left: -11px !important;}
   .tickets-container .tickets-list {padding: 5px 10px !important;height: 306px !important;}
@@ -220,7 +224,6 @@ textarea{resize: none;}
 .task-container .tasks-list .task-item .task-creator {top: 95px !important}
 .task-container .tasks-list .task-item .task-assignedto {top: 95px !important}
 .modal-body button{text-align: center !important}
-.widget-cust{min-height:41px !important;}
 .force-overflow
 {
 	min-height: 450px;
@@ -283,7 +286,7 @@ textarea{resize: none;}
     height: 50px;
     font-size: 25px; */
     float: left;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 2px 2px 5px #7d7b7b;
 }
 .dash-card-green {
     /* padding: 6px 0px 0px 15px;
@@ -293,7 +296,7 @@ textarea{resize: none;}
     height: 50px;
     font-size: 25px; */
     float: left;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 2px 2px 5px #7d7b7b;
 }
 .dash-card-red {
     /* padding: 6px 0px 0px 15px;
@@ -303,7 +306,7 @@ textarea{resize: none;}
     height: 50px;
     font-size: 25px; */
     float: left;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 2px 2px 5px #7d7b7b;
 }
 .dash-card-orange {
     padding: 6px 0px 0px 12px;
@@ -314,7 +317,7 @@ textarea{resize: none;}
     height: 50px;
     font-size: 25px;
     float: left;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 2px 2px 5px #7d7b7b;
 }
 .dash-card-right{}
   .dash-card-right h3{font-size:16px;margin-top:2px;margin-bottom: 2px;padding-left:60px;font-weight: 700 !important;}
@@ -584,8 +587,20 @@ textarea{resize: none;}
   .profile-container .profile-header {margin: 15px 0px 0 !important;}
   .profile-container .profile-header .profile-info{padding: 15px 10px 20px 10px !important;}
 }
-
-
+/* service Agreement */
+@media only screen and (max-width: 529px) and (min-width: 320px){
+    .service-agreement {padding: 0 12px !important;}
+    .service-btn-mbl{overflow: hidden !important;}
+}
+@media only screen and (max-width: 1130px) and (min-width: 530px){
+    .service-agreement {padding: 0 30px !important;}
+    .service-btn-mbl{overflow: hidden !important;}
+}
+@media only screen and (max-width: 344px) and (min-width: 320px){
+  .header-right a {  float: left !important;margin-left:15px;}
+  .page-breadcrumbs {overflow: hidden;}
+}
+/* End of service agreement */
 /* Media screens */
 
 

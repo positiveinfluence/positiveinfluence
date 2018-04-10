@@ -19,7 +19,7 @@ min-width: 280px;
 max-width: 340px;
 width: 25%;
 height: 100%;
-background: #2c3e50;
+background: #2c3e50d1;
 color: #f5f5f5;
 overflow: hidden;
 position: relative;
@@ -345,10 +345,10 @@ padding: 6px 0 46px 8px;
 }
 }
 #frame #sidepanel #contacts ul li.contact:hover {
-background: #32465a;
+background: #32465a57;
 }
 #frame #sidepanel #contacts ul li.contact.active {
-background: #32465a;
+background: #32465a57;
 border-right: 5px solid #435f7a;
 }
 #frame #sidepanel #contacts ul li.contact.active span.contact-status {
@@ -436,7 +436,7 @@ float: left;
 border: none;
 width: 50%;
 padding: 10px 0;
-background: #32465a;
+background: #32465a57;
 color: #f5f5f5;
 cursor: pointer;
 font-size: 0.85em;
@@ -561,7 +561,7 @@ margin-bottom: 20px;
 margin: 6px 8px 0 0;
 }
 #frame .content .messages ul li.sent p {
-background: #435f7a;
+background: #2c3e50d1;
 color: #f5f5f5;
 }
 #frame .content .messages ul li.replies img {
@@ -639,7 +639,7 @@ border: none;
 width: 50px;
 padding: 12px 0;
 cursor: pointer;
-background: #32465a;
+background: #2c3e50d1;
 color: #f5f5f5;
 }
 @media screen and (max-width: 735px) {
