@@ -4,9 +4,15 @@
 .cust-btn:hover, .cust-btn:active, .cust-btn:focus {background-color: #05ce7c !important;color:#fff !important;}
 .theme-color{color:#05ce7c !important;}
 .page-breadcrumbs {box-shadow: none !important;}
+input[type=checkbox]~.text:before, input[type=radio]~.text:before {
+    font-size: 11px !important;
+    height: 15px !important;
+    line-height: 16px !important;
+    min-width: 15px !important;
+}
 input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].colored-primary:checked~.text:before {
-    border-color: #43ce7c;
-    color: #43ce7c;
+    border-color: #43ce7c !important;
+    color: #43ce7c !important;
 }
 ﻿/* Login */
 .login-container {margin: 9% auto !important;}
@@ -180,17 +186,30 @@ input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].col
 .emplpoyee-select{width: 150px;
     margin-top: 2px;
     margin-right: 20px;}
-.edit-fa{   padding: 5px;
+.edit-fa{
+  padding: 5px;
     font-size: 11px;
     width: 20px;
     color: #fff !important;
     height: 20px;
     border-radius: 20%;
     text-decoration: none !important;
-  margin-right: 3px !important;}
+  margin-right: 3px !important;
+}
+.payment-fa{
+  padding: 5px 4px;
+    font-size: 11px;
+    width: 20px;
+    color: #fff !important;
+    height: 20px;
+    border-radius: 20%;
+    text-decoration: none !important;
+  margin-right: 3px !important;
+}
   .orange-span {
     color: #f9b541 !important;
 }
+  .table tbody tr td .checkbox{min-height: 20px !important;}
   .employee-table thead tr th:last-child{width:90px;}
   .last-child-one thead tr th:last-child{width:50px;}
   .last-child-two thead tr th:last-child{width:62px;}
