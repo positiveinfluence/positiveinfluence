@@ -311,73 +311,41 @@
                 <div class="form-title">
                   Reseach Intake Form
                 </div>
+
+
+
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">Name</label>
-                      <span class="input-icon icon-right">
-                        <input type="text" class="form-control" data-bv-notempty="true"
-                        data-bv-notempty-message="The first name is required and cannot be empty" >
-                      </span>
+                      <label for="inputsm">Research Type</label>
+                      <select class="form-control">
+                          <option>Select Report</option>
+                          <option>Foundation Report</option>
+                          <option>Compliance Report</option>
+                          <option>Custom Report</option>
+                      </select>
+
                     </div>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">Company</label>
+                      <label for="inputsm">First Name</label>
                       <span class="input-icon icon-right">
                         <input type="text" class="form-control">
                       </span>
                     </div>
                   </div>
-                </div>
-                <div class="row">
                   <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">Address</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="5" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Email</label>
-                      <span class="input-icon icon-right">
-                        <input type="email" class="form-control">
-                      </span>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputsm">Telephone Number</label>
-                      <span class="input-icon icon-right">
-                        <input =="text" class="form-control">
-                      </span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Billing Address</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="5" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Subject Name</label>
+                      <label for="inputsm">Last Name</label>
                       <span class="input-icon icon-right">
                         <input type="text" class="form-control">
                       </span>
                     </div>
                   </div>
-
                   <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Product Categories</label>
+                    <div class="form-group mrg-top-20">
+                      <label for="inputsm">Product Category</label>
                       <select class="form-control" onchange="changeProduct(this.id)" id="productCategories">
                         <optgroup label="Automitive">
                           <option>Select</option>
@@ -484,13 +452,73 @@
 
                     </div>
                   </div>
-
-                  <div class="col-sm-4" id="specificDetails">
+                  <div class="col-sm-4">
                     <div class="form-group">
-                      <label for="inputsm">Specific Details</label>
+                      <label for="inputsm">Additional Category to be examined - additional fees may apply</label>
+                      <span class="input-icon icon-right">
+                        <input type="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="checkbox mrg-top-20">
+                      <label>
+                        <input type="checkbox" class="colored-primary" id="terms-conditions" checked>
+                        <span class="text darkgray">Is the Product/service targeted towards children below 18 years of age?</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="inputsm">Additional Details</label>
+                      <textarea class="form-control" rows="3" id="form-field-8"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">Primary Competitors</label>
                       <span class="input-icon icon-right">
                         <input =="text" class="form-control">
                       </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">&nbsp;</label>
+                      <span class="input-icon icon-right">
+                        <input =="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label for="inputsm">&nbsp;</label>
+                      <span class="input-icon icon-right">
+                        <input =="text" class="form-control">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+
+                  <div class="col-sm-4">
+
+                    <div class="text-center">
+                    <div class="upload-btn-wrapper mrg-top-80">
+                      <button class="upload-btn">Upload Subject’s Photo</button>
+                      <input type="file" name="myfile" onchange="readURL(this);"/>
+                    </div>
+                    <p id="image-name" class="upload-title"></p>
+                  </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="upload-img-area">
+                      <img id="blah" src="http://placehold.it/180" style="width:215px;height:260px" alt="your image" class="img-responsive"/>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -501,79 +529,6 @@
                       </span>
                     </div>
                   </div>
-                </div>
-                  <div class="row">
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Additional Category to be examined - additional fees may apply</label>
-                      <span class="input-icon icon-right">
-                        <input type="text" class="form-control">
-                      </span>
-                    </div>
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox" class="colored-primary" id="terms-conditions" checked>
-                        <span class="text darkgray">Is the Product/service targeted towards children below 18 years of age?</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <label for="inputsm">Subject's Social Media Sites</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="5" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              <div class="row">
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">select dates</label>
-                      <span class="input-icon icon-right">
-                        <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputsm">Briefly describe the data points are you looking to have studied</label>
-                      <span class="input-icon icon-right">
-                        <textarea class="form-control" rows="6" id="form-field-8"></textarea>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="inputsm">Service Type</label>
-                      <select class="form-control" name="country" data-bv-field="country">
-                        <option value="">Select</option>
-                        <option value="">IT</option>
-                        <option value="">Business</option>
-                        <option value="">Banking</option>
-                        <option value="">Education</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputsm">Primary Competitors</label>
-                      <span class="input-icon icon-right">
-                        <input =="text" class="form-control">
-                      </span>
-                    </div>
-                    <div class="text-center">
-                    <div class="upload-btn-wrapper">
-                      <button class="upload-btn">Upload Photo</button>
-                      <input type="file" name="myfile" onchange="readURL(this);"/>
-                    </div>
-                    <p id="image-name" class="upload-title"></p>
-                  </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="upload-img-area" style="">
-                      <img id="blah" src="http://placehold.it/180" alt="your image" class="img-responsive"/>
-                    </div>
-                  </div>
-
                 </div>
 
 

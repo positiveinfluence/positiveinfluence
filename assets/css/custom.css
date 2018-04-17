@@ -10,9 +10,10 @@ input[type=checkbox]~.text:before, input[type=radio]~.text:before {
     line-height: 16px !important;
     min-width: 15px !important;
 }
+
 input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].colored-primary:checked~.text:before {
-    border-color: #43ce7c !important;
-    color: #43ce7c !important;
+    border-color: #43ce7b !important;
+    color: #43ce7b !important;
 }
 ﻿/* Login */
 .login-container {margin: 9% auto !important;}
@@ -296,7 +297,7 @@ textarea{resize: none;}
 /* end of scrollbar 2 */
 .cust-form-group{margin-bottom:0px !important}
 .form-title {color: #43ce7c !important;}
-.dash-card {padding:5px;background-color: #fff;margin-bottom:20px;overflow: hidden;box-shadow: 0 0 4px rgba(0,0,0,.3);}
+.dash-card {    padding: 3px 5px 5px 5px;background-color: #fff;margin-bottom:20px;overflow: hidden;box-shadow: 0 0 4px rgba(0,0,0,.3);}
 .dash-card-yellow {
     /* padding: 6px 0px 0px 15px;
     background-color: #face54;
@@ -629,3 +630,5 @@ textarea{resize: none;}
 .forgotpwd .modal-dialog .modal-body {overflow:hidden;}
 .loginbox-forgot a {background-color:transparent !important; border:none; padding:0px; }
 .loginbox-forgot a:hover, .loginbox-forgot a:focus, .loginbox-forgot a:active {background-color:transparent !important;}
+.mrg-top-80{margin-top:80px;}
+.mrg-top-20{margin-top:20px;}
