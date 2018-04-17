@@ -318,7 +318,7 @@
                   <div class="col-sm-4">
                     <div class="form-group">
                       <label for="inputsm">Research Type</label>
-                      <select class="form-control">
+                      <select class="form-control" onchange="changeProduct(this.id)" id="productCategories">
                           <option>Select Report</option>
                           <option>Foundation Report</option>
                           <option>Compliance Report</option>
@@ -346,7 +346,7 @@
                   <div class="col-sm-4">
                     <div class="form-group mrg-top-20">
                       <label for="inputsm">Product Category</label>
-                      <select class="form-control" onchange="changeProduct(this.id)" id="productCategories">
+                      <select class="form-control">
                         <optgroup label="Automitive">
                           <option>Select</option>
                           <option>Vehicles</option>
@@ -521,11 +521,11 @@
                       <img id="blah" src="http://placehold.it/180" style="width:215px;height:260px" alt="your image" class="img-responsive"/>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-4" id="specificDetails" style="display:none;">
                     <div class="form-group">
                       <label for="inputsm">Price</label>
                       <span class="input-icon icon-right">
-                        <input =="text" class="form-control">
+                        <input =="text" class="form-control" placeholder="contact representative">
                       </span>
                     </div>
                   </div>
@@ -630,7 +630,7 @@ function readURL(input) {
 /* product-categories change function*/
 function changeProduct(id){
   var thisvalue = $("#"+id).find("option:selected").text();
-  if(thisvalue=="Others" || thisvalue=="Other Durable Goods" || thisvalue=="Other Household Goods" || thisvalue=="Other FMCG" || thisvalue=="OTC Applications" || thisvalue=="Vitamins & Nutraceuticals" || thisvalue=="OTC Products & Devices" || thisvalue=="Other Recreation" || thisvalue=="Other Media" || thisvalue=="Other Not-for-Profit" || thisvalue=="Non-Profit"){
+  if(thisvalue=="Custom Report"){
     $("#specificDetails").show();
   }
   else{
