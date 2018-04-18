@@ -39,10 +39,10 @@
       </div>
       <div class="loginbox-title theme-color">LOGIN</div>
       <div class="loginbox-textbox">
-        <input type="text" class="form-control" placeholder="Email" />
+        <input type="text" class="form-control" id="loginusername" placeholder="Email" />
       </div>
       <div class="loginbox-textbox">
-        <input type="text" class="form-control" placeholder="Password" />
+        <input type="password" class="form-control" id="loginpassword" placeholder="Password" />
       </div>
       <div class="cust-overflow">
       <!-- <div class="loginbox-remember">
@@ -58,7 +58,7 @@
       </div>
     </div>
       <div class="loginbox-submit text-center">
-        <input type="button" class="btn btn-block cust-btn" value="Login">
+        <input type="button" class="btn btn-block cust-btn" id="login-btn" value="Login">
       </div>
       <div class="loginbox-or">
         <div class="or-line"></div>
@@ -81,11 +81,10 @@
 
       </div>
       <div class="loginbox-submit text-center mrg-top-10">
-        <input type="button" class="btn btn-block cust-btn" value="Submit">
+        <button type="button" class="btn btn-block cust-btn" value="Submit">Send</button>
       </div>
     </div>
   </div>
-
 
   <!--Basic Scripts-->
   <script src="assets/js/jquery.min.js"></script>
@@ -109,7 +108,28 @@ $("#login").show();
 })
 })
 </script>
+<script>
 
+             // on click Sign In Button checks that username =='admin' and password == 'password'
+             $("#login-btn").click(function(){
+             if( $("#loginusername").val()=='admin' && $("#loginpassword").val()=='admin') {
+                     window.location.href="index.html";
+                 }
+                 else if( $("#loginusername").val()=='client' && $("#loginpassword").val()=='client') {
+                         window.location.href="client-index.html";
+                     }
+                    else  if( $("#loginusername").val()=='employee' && $("#loginpassword").val()=='employee') {
+                             window.location.href="employee-index.html";
+                         }
+             else {
+                 alert("Please try again");
+             }
+
+
+         });
+
+
+</script>
 </body>
 <!--Body Ends-->
 </html>

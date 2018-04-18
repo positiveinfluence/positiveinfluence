@@ -1,564 +1,554 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <!-- Head -->
 <head>
-    <meta charset="utf-8" />
-    <title>User Profile</title>
+  <meta charset="utf-8" />
+  <title>User Profile</title>
 
-    <meta name="description" content="user profile" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <meta name="description" content="user profile" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-    <!--Basic Styles-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/custom.css" rel="stylesheet" />
+  <!--Basic Styles-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="assets/css/custom.css" rel="stylesheet" />
 
-    <!--Fonts-->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+  <!--Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
 
-    <!--Beyond styles-->
-    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
-    <link href="assets/css/demo.min.css" rel="stylesheet" />
-    <link href="assets/css/typicons.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.min.css" rel="stylesheet" />
+  <!--Beyond styles-->
+  <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+  <link href="assets/css/demo.min.css" rel="stylesheet" />
+  <link href="assets/css/typicons.min.css" rel="stylesheet" />
+  <link href="assets/css/animate.min.css" rel="stylesheet" />
 
-    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-    <script src="assets/js/skins.min.js"></script>
+  <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+  <script src="assets/js/skins.min.js"></script>
 </head>
 <!-- /Head -->
 <!-- Body -->
 <body>
-    <!-- Loading Container -->
-    <div class="loading-container">
-        <div class="loader"></div>
-    </div>
-    <!--  /Loading Container -->
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="navbar-container">
-                <!-- Navbar Barnd -->
-                <div class="navbar-header pull-left">
-                    <a href="#" class="navbar-brand">
-                        <small>
-                            <img src="assets/img/logo-color.png" alt="" />
-                        </small>
-                    </a>
-                </div>
-                <!-- /Navbar Barnd -->
-                <!-- Sidebar Collapse -->
-                <div class="sidebar-collapse" id="sidebar-collapse">
-                    <i class="collapse-icon fa fa-bars"></i>
-                </div>
-                <!-- /Sidebar Collapse -->
-                <!-- Account Area and Settings --->
-                <div class="navbar-header pull-right">
-                    <div class="navbar-account">
-                        <ul class="account-area">
-                            <li>
-                                <a class=" dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
-                                    <i class="icon fa fa-warning"></i>
-                                </a>
-                                <!--Notification Dropdown-->
-                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
-                                    <li>
-                                        <a href="#">
-                                            <div class="clearfix">
-                                                <div class="notification-icon">
-                                                    <i class="fa fa-phone bg-themeprimary white"></i>
-                                                </div>
-                                                <div class="notification-body">
-                                                    <span class="title">Skype meeting with Patty</span>
-                                                    <span class="description">01:00 pm</span>
-                                                </div>
-                                                <div class="notification-extra">
-                                                    <i class="fa fa-clock-o themeprimary"></i>
-                                                    <span class="description">office</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="clearfix">
-                                                <div class="notification-icon">
-                                                    <i class="fa fa-check bg-darkorange white"></i>
-                                                </div>
-                                                <div class="notification-body">
-                                                    <span class="title">Uncharted break</span>
-                                                    <span class="description">03:30 pm - 05:15 pm</span>
-                                                </div>
-                                                <div class="notification-extra">
-                                                    <i class="fa fa-clock-o darkorange"></i>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="clearfix">
-                                                <div class="notification-icon">
-                                                    <i class="fa fa-gift bg-warning white"></i>
-                                                </div>
-                                                <div class="notification-body">
-                                                    <span class="title">Kate birthday party</span>
-                                                    <span class="description">08:30 pm</span>
-                                                </div>
-                                                <div class="notification-extra">
-                                                    <i class="fa fa-calendar warning"></i>
-                                                    <i class="fa fa-clock-o warning"></i>
-                                                    <span class="description">at home</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="clearfix">
-                                                <div class="notification-icon">
-                                                    <i class="fa fa-glass bg-success white"></i>
-                                                </div>
-                                                <div class="notification-body">
-                                                    <span class="title">Dinner with friends</span>
-                                                    <span class="description">10:30 pm</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-footer ">
-                                        <span>
-                                            Today, March 28
-                                        </span>
-                                        <span class="pull-right">
-                                            10°c
-                                            <i class="wi wi-cloudy"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                                <!--/Notification Dropdown-->
-                            </li>
-                            <li>
-                                <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
-                                    <i class="icon fa fa-envelope"></i>
-                                    <span class="badge">3</span>
-                                </a>
-                                <!--Messages Dropdown-->
-                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
-                                    <li>
-                                        <a href="#">
-                                            <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
-                                            <div class="message">
-                                                <span class="message-sender">
-                                                    Divyia Austin
-                                                </span>
-                                                <span class="message-time">
-                                                    2 minutes ago
-                                                </span>
-                                                <span class="message-subject">
-                                                    Here's the recipe for apple pie
-                                                </span>
-                                                <span class="message-body">
-                                                    to identify the sending application when the senders image is shown for the main icon
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
-                                            <div class="message">
-                                                <span class="message-sender">
-                                                    Bing.com
-                                                </span>
-                                                <span class="message-time">
-                                                    Yesterday
-                                                </span>
-                                                <span class="message-subject">
-                                                    Bing Newsletter: The January Issue‏
-                                                </span>
-                                                <span class="message-body">
-                                                    Discover new music just in time for the Grammy® Awards.
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
-                                            <div class="message">
-                                                <span class="message-sender">
-                                                    Nicolas
-                                                </span>
-                                                <span class="message-time">
-                                                    Friday, September 22
-                                                </span>
-                                                <span class="message-subject">
-                                                    New 4K Cameras
-                                                </span>
-                                                <span class="message-body">
-                                                    The 4K revolution has come over the horizon and is reaching the general populous
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!--/Messages Dropdown-->
-                            </li>
-
-                            <li>
-                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
-                                    <div class="avatar" title="View your public profile">
-                                    <img src="assets/img/user.png" class="img-responsive">
-                                    </div>
-                                    <section>
-                                        <h2><span class="profile"><span>Employee</span></span></h2>
-                                    </section>
-                                </a>
-                                <!--Login Area Dropdown-->
-                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-                                    <li class="username"><a>Employee</a></li>
-                                    <li class="email"><a>employee@pir.com</a></li>
-                                    <!--Avatar Area-->
-
-                                    <li class="edit">
-                                        <a href="#" class="pull-right">Edit Profile</a>
-                                    </li>
-
-                                    <li class="dropdown-footer">
-                                        <a href="login.html">
-                                            Sign out
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!--/Login Area Dropdown-->
-                            </li>
-                            <!-- /Account Area -->
-
-                    </div>
-                </div>
-                <!-- /Account Area and Settings -->
-            </div>
+  <!-- Loading Container -->
+  <div class="loading-container">
+    <div class="loader"></div>
+  </div>
+  <!--  /Loading Container -->
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-container">
+        <!-- Navbar Barnd -->
+        <div class="navbar-header pull-left">
+          <a href="#" class="navbar-brand">
+            <small>
+              <img src="assets/img/logo-color.png" alt="" />
+            </small>
+          </a>
         </div>
+        <!-- /Navbar Barnd -->
+        <!-- Sidebar Collapse -->
+        <div class="sidebar-collapse" id="sidebar-collapse">
+          <i class="collapse-icon fa fa-bars"></i>
+        </div>
+        <!-- /Sidebar Collapse -->
+        <!-- Account Area and Settings --->
+        <div class="navbar-header pull-right">
+          <div class="navbar-account">
+            <ul class="account-area">
+              <li>
+                <a class=" dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
+                  <i class="icon fa fa-warning"></i>
+                </a>
+                <!--Notification Dropdown-->
+                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                  <li>
+                    <a href="#">
+                      <div class="clearfix">
+                        <div class="notification-icon">
+                          <i class="fa fa-phone bg-themeprimary white"></i>
+                        </div>
+                        <div class="notification-body">
+                          <span class="title">Skype meeting with Patty</span>
+                          <span class="description">01:00 pm</span>
+                        </div>
+                        <div class="notification-extra">
+                          <i class="fa fa-clock-o themeprimary"></i>
+                          <span class="description">office</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="clearfix">
+                        <div class="notification-icon">
+                          <i class="fa fa-check bg-darkorange white"></i>
+                        </div>
+                        <div class="notification-body">
+                          <span class="title">Uncharted break</span>
+                          <span class="description">03:30 pm - 05:15 pm</span>
+                        </div>
+                        <div class="notification-extra">
+                          <i class="fa fa-clock-o darkorange"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="clearfix">
+                        <div class="notification-icon">
+                          <i class="fa fa-gift bg-warning white"></i>
+                        </div>
+                        <div class="notification-body">
+                          <span class="title">Kate birthday party</span>
+                          <span class="description">08:30 pm</span>
+                        </div>
+                        <div class="notification-extra">
+                          <i class="fa fa-calendar warning"></i>
+                          <i class="fa fa-clock-o warning"></i>
+                          <span class="description">at home</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="clearfix">
+                        <div class="notification-icon">
+                          <i class="fa fa-glass bg-success white"></i>
+                        </div>
+                        <div class="notification-body">
+                          <span class="title">Dinner with friends</span>
+                          <span class="description">10:30 pm</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-footer ">
+                    <span>
+                      Today, March 28
+                    </span>
+                    <span class="pull-right">
+                      10°c
+                      <i class="wi wi-cloudy"></i>
+                    </span>
+                  </li>
+                </ul>
+                <!--/Notification Dropdown-->
+              </li>
+              <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
+                  <i class="icon fa fa-envelope"></i>
+                  <span class="badge">3</span>
+                </a>
+                <!--Messages Dropdown-->
+                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+                  <li>
+                    <a href="#">
+                      <img src="assets/img/user.png" class="message-avatar" alt="Divyia Austin">
+                      <div class="message">
+                        <span class="message-sender">
+                          Divyia Austin
+                        </span>
+                        <span class="message-time">
+                          2 minutes ago
+                        </span>
+                        <span class="message-subject">
+                          Here's the recipe for apple pie
+                        </span>
+                        <span class="message-body">
+                          to identify the sending application when the senders image is shown for the main icon
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/img/user.png" class="message-avatar" alt="Microsoft Bing">
+                      <div class="message">
+                        <span class="message-sender">
+                          Bing.com
+                        </span>
+                        <span class="message-time">
+                          Yesterday
+                        </span>
+                        <span class="message-subject">
+                          Bing Newsletter: The January Issue‏
+                        </span>
+                        <span class="message-body">
+                          Discover new music just in time for the Grammy® Awards.
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/img/user.png" class="message-avatar" alt="Divyia Austin">
+                      <div class="message">
+                        <span class="message-sender">
+                          Nicolas
+                        </span>
+                        <span class="message-time">
+                          Friday, September 22
+                        </span>
+                        <span class="message-subject">
+                          New 4K Cameras
+                        </span>
+                        <span class="message-body">
+                          The 4K revolution has come over the horizon and is reaching the general populous
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!--/Messages Dropdown-->
+              </li>
+
+              <li>
+                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                  <div class="avatar" title="View your public profile">
+                    <img src="assets/img/user.png" class="img-responsive">
+                  </div>
+                  <section>
+                    <h2><span class="profile"><span>Employee</span></span></h2>
+                  </section>
+                </a>
+                <!--Login Area Dropdown-->
+                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                  <li class="username"><a>Employee</a></li>
+                  <li class="email"><a>employee@pir.com</a></li>
+                  <!--Avatar Area-->
+
+                  <li class="edit">
+                    <a href="#" class="pull-right">Edit Profile</a>
+                  </li>
+
+                  <li class="dropdown-footer">
+                    <a href="login.html">
+                      Sign out
+                    </a>
+                  </li>
+                </ul>
+                <!--/Login Area Dropdown-->
+              </li>
+              <!-- /Account Area -->
+
+            </div>
+          </div>
+          <!-- /Account Area and Settings -->
+        </div>
+      </div>
     </div>
     <!-- /Navbar -->
     <!-- Main Container -->
     <div class="main-container container-fluid">
-        <!-- Page Container -->
-        <div class="page-container">
-            <!-- Page Sidebar -->
-            <div class="page-sidebar" id="sidebar">
-                <!-- Page Sidebar Header-->
-                <div class="sidebar-header-wrapper">
-                    <input type="text" class="searchinput" />
-                    <i class="searchicon fa fa-search"></i>
-                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
-                </div>
-                <!-- /Page Sidebar Header -->
-                <!-- Sidebar Menu -->
-                <ul class="nav sidebar-menu">
-                    <!--Dashboard-->
-                    <li>
-                        <a href="employee-index.html">
-                            <i class="menu-icon glyphicon glyphicon-home"></i>
-                            <span class="menu-text"> Dashboard </span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /Sidebar Menu -->
-            </div>
-            <!-- /Page Sidebar -->
-
-            <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Breadcrumb -->
-                <div class="page-breadcrumbs">
-                    <ul class="breadcrumb">
-                        <li class="active">
-                            <i class="fa fa-home"></i>
-                            <a href="#">Employee Profile</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /Page Breadcrumb -->
-
-                <!-- Page Body -->
-                <div class="page-body page-body-view">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="profile-container">
-                                <div class="profile-header row">
-                                    <div class="col-lg-2 col-md-4 col-sm-12 text-center">
-                                        <img src="assets/img/profile.png" alt="" class="header-avatar" />
-                                    </div>
-                                    <div class="col-lg-10 col-md-8 col-sm-12 profile-info">
-                                        <div class="header-fullname">James Smith</div>
-                                        <div class="header-information">
-                                            Kim is a software developer in Microsoft. She works in ASP.NET MVC Team and collaborates with other teams.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="profile-body">
-                                    <div class="col-lg-12">
-                                        <div class="tabbable">
-                                            <ul class="nav nav-tabs tabs-flat  nav-justified" id="myTab11">
-                                                <li class="active">
-                                                    <a data-toggle="tab" href="#overview">
-                                                        View Profile
-                                                    </a>
-                                                </li>
-                                                <li class="tab-yellow">
-                                                    <a data-toggle="tab" href="#settings">
-                                                        Edit Profile
-                                                    </a>
-                                                </li>
-                                                <li class="tab-orange">
-                                                    <a data-toggle="tab" id="changepassword" href="#changepwd">
-                                                        Change Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content tabs-flat">
-                                              <div id="overview" class="tab-pane active">
-                                                  <div class="row profile-overview">
-                                                      <div class="col-md-12 form-horizontal">
-                                                        <div class="form-title">
-                                                            Personal Information
-                                                        </div>
-                                                        <div class="row">
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">First Name:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">James</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Last Name:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">Smith</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Email:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">James.Smith@pir.com</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="row">
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Phone Number:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">(541) 754-3010</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Mobile Number:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">(541) 754-3010</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Domain Expertise:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">Public Information</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Experience:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">2</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="form-title">
-                                                            Contact Information
-                                                        </div>
-                                                        <div class="row">
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">Locality:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">Third Street</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">City:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">San Francisco</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                            <div class="form-group">
-                                                              <label class="control-label col-sm-5 lbl-pad-top" for="email">State:</label>
-                                                              <div class="col-sm-7">
-                                                                <p class="form-control-static lbl-pad-top-btm">California</p>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-
-                                                  </div>
-                                              </div>
-                                                <div id="settings" class="tab-pane">
-                                                  <form role="form">
-                                                      <div class="form-title theme-color">
-                                                          Personal Information
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">First Name</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                      <!-- <i class="fa fa-user blue"></i> -->
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">Last Name</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">Email</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="email" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm" >Phone Number</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">Mobile Number</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">Domain Expertise</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">Experience</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">Locality</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">City</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-4">
-                                                              <div class="form-group">
-                                                                <label for="inputsm">State</label>
-                                                                  <span class="input-icon icon-right">
-                                                                      <input type="text" class="form-control">
-                                                                  </span>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <button type="submit" class="btn btn-primary mrg-btm-10">Save Profile</button>
-                                                  </form>
-                                                </div>
-                                                <div id="changepwd" class="tab-pane">
-                                                  <div class="form-title">
-                                                      Change Password
-                                                  </div>
-                                                    <div class="row">
-                                                      <div class="col-md-4 col-md-offset-4">
-                                                        <div class="form-group">
-                                                          <label for="inputsm">Old Password</label>
-                                                            <span class="input-icon icon-right">
-                                                                <input type="password" class="form-control">
-                                                                <i class="icon fa fa-key yellow"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                          <label for="inputsm">New Password</label>
-                                                            <span class="input-icon icon-right">
-                                                                <input type="password" class="form-control">
-                                                                <i class="icon fa fa-key yellow"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                          <label for="inputsm">Confirm Password</label>
-                                                            <span class="input-icon icon-right">
-                                                                <input type="password" class="form-control">
-                                                                <i class="icon fa fa-key yellow"></i>
-                                                            </span>
-                                                        </div>
-                                                        <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
-                                                      </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Page Body -->
-            </div>
-            <!-- /Page Content -->
+      <!-- Page Container -->
+      <div class="page-container">
+        <!-- Page Sidebar -->
+        <div class="page-sidebar" id="sidebar">
+          <!-- Page Sidebar Header-->
+          <div class="sidebar-header-wrapper">
+            <input type="text" class="searchinput" />
+            <i class="searchicon fa fa-search"></i>
+            <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+          </div>
+          <!-- /Page Sidebar Header -->
+          <!-- Sidebar Menu -->
+          <ul class="nav sidebar-menu">
+            <!--Dashboard-->
+            <li>
+              <a href="employee-index.html">
+                <i class="menu-icon glyphicon glyphicon-home"></i>
+                <span class="menu-text"> Dashboard </span>
+              </a>
+            </li>
+          </ul>
+          <!-- /Sidebar Menu -->
         </div>
-        <!-- /Page Container -->
-        <!-- Main Container -->
+        <!-- /Page Sidebar -->
+
+        <!-- Page Content -->
+        <div class="page-content">
+          <!-- Page Breadcrumb -->
+          <div class="page-breadcrumbs">
+            <ul class="breadcrumb">
+              <li class="active">
+                <i class="fa fa-home"></i>
+                <a href="#">Employee Profile</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /Page Breadcrumb -->
+
+          <!-- Page Body -->
+          <div class="page-body page-body-view">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="profile-container">
+                  <div class="profile-header row">
+                    <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                      <img src="assets/img/profile.png" alt="" class="header-avatar" />
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-sm-12 profile-info">
+                      <div class="header-fullname">James Smith</div>
+                      <div class="header-information">
+                        Kim is a software developer in Microsoft. She works in ASP.NET MVC Team and collaborates with other teams.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-body">
+                    <div class="col-lg-12">
+                      <div class="tabbable">
+                        <ul class="nav nav-tabs tabs-flat  nav-justified" id="myTab11">
+                          <li class="active">
+                            <a data-toggle="tab" href="#overview">
+                              View Profile
+                            </a>
+                          </li>
+                          <li class="tab-yellow">
+                            <a data-toggle="tab" href="#settings">
+                              Edit Profile
+                            </a>
+                          </li>
+                          <li class="tab-orange">
+                            <a data-toggle="tab" id="changepassword" href="#changepwd">
+                              Change Password
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="tab-content tabs-flat">
+                          <div id="overview" class="tab-pane active">
+                            <div class="row profile-overview">
+                              <div class="col-md-12 form-horizontal">
+                                <div class="form-title">
+                                  Personal Information
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Name:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">James</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Email:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">James.Smith@pir.com</p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Domain Expertise:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">Public Information</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Start Date:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">03-01-18</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Shift:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">Day Shift</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Telephone:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">(541) 754-3010</p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="form-title">
+                                  Contact Information
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">Address:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">Third Street</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">City:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">San Francisco</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group">
+                                      <label class="control-label col-sm-5 lbl-pad-top" for="email">State:</label>
+                                      <div class="col-sm-7">
+                                        <p class="form-control-static lbl-pad-top-btm">California</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div id="settings" class="tab-pane">
+                            <form role="form">
+                              <div class="form-title theme-color">
+                                Personal Information
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">Name</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                      <!-- <i class="fa fa-user blue"></i> -->
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">Email</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="email" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">Domain Expertise</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">Start Date</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm" >Shift</label>
+                                    <select class="form-control" name="country" data-bv-field="country">
+                                      <option value="">Select</option>
+                                      <option>Day Shift</option>
+                                      <option>Night Shift</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">Telephone</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+
+
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">Address</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">City</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group">
+                                    <label for="inputsm">State</label>
+                                    <span class="input-icon icon-right">
+                                      <input type="text" class="form-control">
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary mrg-btm-10">Save Profile</button>
+                            </form>
+                          </div>
+                          <div id="changepwd" class="tab-pane">
+                            <div class="form-title">
+                              Change Password
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4 col-md-offset-4">
+                                <div class="form-group">
+                                  <label for="inputsm">Old Password</label>
+                                  <span class="input-icon icon-right">
+                                    <input type="password" class="form-control">
+                                    <i class="icon fa fa-key yellow"></i>
+                                  </span>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputsm">New Password</label>
+                                  <span class="input-icon icon-right">
+                                    <input type="password" class="form-control">
+                                    <i class="icon fa fa-key yellow"></i>
+                                  </span>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputsm">Confirm Password</label>
+                                  <span class="input-icon icon-right">
+                                    <input type="password" class="form-control">
+                                    <i class="icon fa fa-key yellow"></i>
+                                  </span>
+                                </div>
+                                <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Page Body -->
+        </div>
+        <!-- /Page Content -->
+      </div>
+      <!-- /Page Container -->
+      <!-- Main Container -->
 
     </div>
 
@@ -569,8 +559,8 @@
 
     <!--Beyond Scripts-->
     <script src="assets/js/beyond.min.js"></script>
-  
 
-</body>
-<!--  /Body -->
-</html>
+
+  </body>
+  <!--  /Body -->
+  </html>
