@@ -3,7 +3,7 @@
 <!-- Head -->
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard</title>
+  <title>Client Previous Orders</title>
 
   <meta name="description" content="user profile" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,7 +52,7 @@
         <!-- /Navbar Barnd -->
         <!-- Sidebar Collapse -->
         <div class="sidebar-collapse" id="sidebar-collapse">
-          <i class="collapse-icon fa fa-caret-down"></i>
+          <i class="collapse-icon fa fa-bars"></i>
         </div>
         <!-- /Sidebar Collapse -->
         <!-- Account Area and Settings --->
@@ -134,7 +134,7 @@
                       Today, March 28
                     </span>
                     <span class="pull-right">
-                      
+
                       <i class="wi wi-cloudy"></i>
                     </span>
                   </li>
@@ -209,210 +209,190 @@
                 <!--/Messages Dropdown-->
               </li>
 
-          <li>
-            <a class="login-area dropdown-toggle" data-toggle="dropdown">
-              <div class="avatar" title="View your public profile">
-                <img src="assets/img/user.png" class="img-responsive">
-              </div>
-              <section>
-                <h2><span class="profile"><span>Employee</span></span></h2>
-              </section>
-            </a>
-            <!--Login Area Dropdown-->
-            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-              <li class="username"><a>Employee</a></li>
-              <li class="email"><a>employee@pir.com</a></li>
-              <!--Avatar Area-->
-
-              <li class="edit">
-                <a href="employee-profile.html" class="pull-right">Edit Profile</a>
-              </li>
-
-              <li class="dropdown-footer">
-                <a href="login.html">
-                  Sign out
+              <li>
+                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                  <div class="avatar" title="View your public profile">
+                    <img src="assets/img/user.png" class="img-responsive">
+                  </div>
+                  <section>
+                    <h2><span class="profile"><span>Admin</span></span></h2>
+                  </section>
                 </a>
+                <!--Login Area Dropdown-->
+                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                  <li class="username"><a>Admin</a></li>
+                  <li class="email"><a>admin@pir.com</a></li>
+                  <!--Avatar Area-->
+
+                  <li class="edit">
+                    <a href="profile.html" class="pull-right">Edit Profile</a>
+                  </li>
+
+                  <li class="dropdown-footer">
+                    <a href="login.html">
+                      Sign out
+                    </a>
+                  </li>
+                </ul>
+                <!--/Login Area Dropdown-->
+              </li>
+              <!-- /Account Area -->
+
+            </div>
+          </div>
+          <!-- /Account Area and Settings -->
+        </div>
+      </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+      <!-- Page Container -->
+      <div class="page-container">
+        <!-- Page Sidebar -->
+        <div class="page-sidebar" id="sidebar">
+          <!-- Page Sidebar Header-->
+          <div class="sidebar-header-wrapper">
+            <input type="text" class="searchinput" />
+            <i class="searchicon fa fa-search"></i>
+            <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+          </div>
+          <!-- /Page Sidebar Header -->
+          <!-- Sidebar Menu -->
+          <ul class="nav sidebar-menu">
+            <!--Dashboard-->
+            <li>
+              <a href="index.html">
+                <i class="menu-icon glyphicon glyphicon-dashboard"></i>
+                <span class="menu-text"> Dashboard </span>
+              </a>
+            </li>
+            <li>
+              <a href="employee.html">
+                <i class="menu-icon fa fa-users"></i>
+                <span class="menu-text"> Employees </span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="client.html">
+                <i class="menu-icon glyphicon glyphicon-copyright-mark"></i>
+                <span class="menu-text"> Clients </span>
+              </a>
+            </li>
+            <li>
+              <a href="configuration.html">
+                <i class="menu-icon fa fa-info"></i>
+                <span class="menu-text"> Configuration </span>
+              </a>
+            </li>
+            <li>
+              <a href="payment-settings.html">
+                <i class="menu-icon fa fa-money"></i>
+                <span class="menu-text"> Payment Settings </span>
+              </a>
+            </li>
+          </ul>
+          <!-- /Sidebar Menu -->
+        </div>
+        <!-- /Page Sidebar -->
+
+        <!-- Page Content -->
+        <div class="page-content">
+          <!-- Page Breadcrumb -->
+          <div class="page-breadcrumbs">
+            <ul class="breadcrumb">
+              <li class="active">
+                <i class="fa fa-home"></i>
+                <a href="#">Orders Information</a>
               </li>
             </ul>
-            <!--/Login Area Dropdown-->
-          </li>
-          <!-- /Account Area -->
+            <div class="header-right">
+            <a href="client.html" type="submit" class="btn cust-btn">Back</a>
+          </div>
+        </div>
+        <!-- /Page Breadcrumb -->
 
-        </div>
-      </div>
-      <!-- /Account Area and Settings -->
-    </div>
-  </div>
-</div>
-<!-- /Navbar -->
-<!-- Main Container -->
-<div class="main-container container-fluid">
-  <!-- Page Container -->
-  <div class="page-container">
-    <!-- Page Sidebar -->
-    <div class="page-sidebar" id="sidebar">
-      <!-- Page Sidebar Header-->
-      <div class="sidebar-header-wrapper">
-        <input type="text" class="searchinput" />
-        <i class="searchicon fa fa-search"></i>
-        <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
-      </div>
-      <!-- /Page Sidebar Header -->
-      <!-- Sidebar Menu -->
-      <ul class="nav sidebar-menu">
-        <!--Dashboard-->
-        <li class="active">
-          <a href="employee-index.html">
-            <i class="menu-icon glyphicon glyphicon-home"></i>
-            <span class="menu-text"> Dashboard </span>
-          </a>
-        </li>
-      </ul>
-      <!-- /Sidebar Menu -->
-    </div>
-    <!-- /Page Sidebar -->
-
-    <!-- Page Content -->
-    <div class="page-content">
-      <!-- Page Breadcrumb -->
-      <div class="page-breadcrumbs">
-        <ul class="breadcrumb">
-          <li class="active">
-            <i class="fa fa-home"></i>
-            <a href="#">Dashboard</a>
-          </li>
-        </ul>
-      </div>
-<!-- Page Body -->
-<div class="page-body">
-  <div class="row">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="dash-card">
-        <div class="dash-content">
-          <div class="dash-card-yellow">
-            <img src="assets/img/card-icon-1.png" class="img-responsive">
-          </div>
-          <div class="dash-card-right">
-            <h3 class="yellow">Total Jobs</h3>
-            <h4>250</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="dash-card">
-        <div class="dash-content">
-          <div class="dash-card-green">
-            <img src="assets/img/card-icon-2.png" class="img-responsive">
-          </div>
-          <div class="dash-card-right">
-            <h3 class="theme-color">Completed Jobs</h3>
-            <h4>150</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="dash-card">
-        <div class="dash-content">
-          <div class="dash-card-red">
-            <img src="assets/img/card-icon-3.png" class="img-responsive">
-          </div>
-          <div class="dash-card-right">
-            <h3 class="red">Pending Jobs</h3>
-            <h4>100</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="dash-card">
-        <div class="dash-content">
-          <div class="dash-card-green">
-            <img src="assets/img/card-icon-4.png" class="img-responsive">
-          </div>
-          <div class="dash-card-right">
-            <h3 class="purple">Jobs in progress</h3>
-            <h4>100</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-  <div class="row">
-    <div class="col-lg-12 col-sm-12 col-xs-12">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="widget">
-            <div class="widget-header bordered-bottom bordered-themesecondary widget-cust">
-              <i class="widget-icon fa fa-tags themesecondary"></i>
-              <span class="widget-caption themesecondary">Order Details</span>
-              <div style="">
-                <div class="form-group cust-select-ctrl">
-                <select class="form-control" name="country" data-bv-field="country">
-                  <option value="">Select Reports</option>
-                  <option value="">Weekly Report</option>
-                  <option value="">Monthly Report</option>
-                </select>
-              </div>
-              <div class="form-group cust-select-ctrl">
-              <select class="form-control" name="country" data-bv-field="country">
-                <option value="">Select Orders</option>
-                <option value="">Total Jobs</option>
-                <option value="">Completed Jobs</option>
-                <option value="">Pending Jobs</option>
-                <option value="">Jobs in progress</option>
-              </select>
-            </div>
-              </div>
-            </div><!--Widget Header-->
-            <div class="widget-body  no-padding">
-              <div class="tickets-container">
+        <!-- Page Body -->
+        <div class="page-body">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="page-view">
+                <div class="form-title">
+                  Jone Lee Order Information
+                </div>
                 <div class="table-responsive">
-                  <table class="table table-striped table-design last-child-two">
+                  <table class="table table-striped table-design employee-table">
                     <thead>
                       <tr>
-                        <th>Assign Date</th>
-                        <th>Job Title</th>
-                        <th>Description</th>
-                        <th>Effort Hours</th>
+                        <th>Order Date</th>
+                        <th>Type</th>
+                        <th style="width:270px">Product Category</th>
+                        <th>Acceptance</th>
+                        <th>Acceptance Date/Time </th>
+                        <th>Assigned To</th>
                         <th>Status</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>05-03-18</td>
-                        <td>Deep Employee Report</td>
+                        <td>03-03-18</td>
+                        <td>Foundation</td>
                         <td>Public Information</td>
-                        <td>20</td>
-                        <td><span class="red">Pending</span></td>
+                        <td class="green">Approved </td>
+                        <td>03-04-18 5:30 AM</td>
+                        <td>James</td>
                         <td>
-                          <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Download" class="fa fa-download edit edit-fa"></a>
-                          <a href="employee-report-upload.html" data-toggle="tooltip" data-placement="top" data-original-title="Upload" class="fa fa-upload delete edit-fa"></a>
+                          <label class="switch-btn switch-flat">
+                            <input class="switch-input" type="checkbox">
+                            <span class="switch-label" data-on="Completed" data-off="Inprogress"></span>
+                            <span class="switch-handle"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="job-description.html" data-toggle="tooltip" data-placement="top" data-original-title="View" class="fa fa-eye edit edit-fa"></a>
+                          <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Delete" class="fa fa-trash delete edit-fa"></a>
+                          <a href="job-description.html" data-toggle="modal" data-target=".accept-request" data-placement="top" data-original-title="Assign" class="fa fa-check-square-o assign edit-fa"></a>
                         </td>
                       </tr>
                       <tr>
-                        <td>11-03-18</td>
-                        <td>Brand Endorsement Report</td>
+                        <td>04-03-18</td>
+                        <td>Compliance</td>
                         <td>eCommerce</td>
-                        <td>32</td>
-                        <td><span class="orange-span">Inprogress</span></td>
+                        <td class="red">Rejected</td>
+                        <td>-</td>
+                        <td>-</td>
                         <td>
-                          <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Download" class="fa fa-download edit edit-fa"></a>
-                          <a href="employee-report-upload.html" data-toggle="tooltip" data-placement="top" data-original-title="Upload" class="fa fa-upload delete edit-fa"></a>
+                          <label class="switch-btn switch-flat">
+                            <input class="switch-input" type="checkbox">
+                            <span class="switch-label" data-on="Completed" data-off="Inprogress"></span>
+                            <span class="switch-handle"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="job-description.html" data-toggle="tooltip" data-placement="top" data-original-title="View" class="fa fa-eye edit edit-fa"></a>
+                          <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Delete" class="fa fa-trash delete edit-fa"></a>
+                          <a href="job-description.html" style="display:none;" data-toggle="modal" data-target=".accept-request" data-placement="top" data-original-title="Assign" class="fa fa-check-square-o assign edit-fa"></a>
                         </td>
                       </tr>
                       <tr>
-                        <td>22-03-18</td>
-                        <td>Smith Employee Profile Report</td>
+                        <td>04-15-18</td>
+                        <td>Custom</td>
                         <td>Public Information</td>
-                        <td>40</td>
-                        <td><span class="green">Completed</span></td>
+                        <td class="green">Approved</td>
+                        <td>04-16-18 3:30 PM</td>
+                        <td>Riya</td>
                         <td>
-                          <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Download" class="fa fa-download edit edit-fa"></a>
-                          <a href="employee-report-upload.html" data-toggle="tooltip" data-placement="top" data-original-title="Upload" class="fa fa-upload delete edit-fa"></a>
+                          <label class="switch-btn switch-flat">
+                            <input class="switch-input" type="checkbox">
+                            <span class="switch-label" data-on="Completed" data-off="Inprogress"></span>
+                            <span class="switch-handle"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="job-description.html" data-toggle="tooltip" data-placement="top" data-original-title="View" class="fa fa-eye edit edit-fa"></a>
+                          <a href="" data-toggle="tooltip" data-placement="top" data-original-title="Delete" class="fa fa-trash delete edit-fa"></a>
+                          <a href="job-description.html" data-toggle="modal" data-target=".accept-request" data-placement="top" data-original-title="Assign" class="fa fa-check-square-o assign edit-fa"></a>
                         </td>
                       </tr>
                     </tbody>
@@ -421,28 +401,22 @@
               </div>
             </div>
           </div>
-
         </div>
+        <!-- /Page Body -->
       </div>
+      <!-- /Page Content -->
     </div>
+    <!-- /Page Container -->
+    <!-- Main Container -->
+
   </div>
-</div>
-<!-- /Page Body -->
-</div>
-<!-- /Page Content -->
-</div>
-<!-- /Page Container -->
-<!-- Main Container -->
 
-</div>
+  <!--Basic Scripts-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 
-<!--Basic Scripts-->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
-
-<!--Beyond Scripts-->
-<script src="assets/js/beyond.min.js"></script>
+  <!--Beyond Scripts-->
+  <script src="assets/js/beyond.min.js"></script>
 
 
 </body>

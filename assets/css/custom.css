@@ -632,3 +632,15 @@ textarea{resize: none;}
 .loginbox-forgot a:hover, .loginbox-forgot a:focus, .loginbox-forgot a:active {background-color:transparent !important;}
 .mrg-top-80{margin-top:80px;}
 .mrg-top-20{margin-top:20px;}
+.fullscreen_bg {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-size: cover;
+   background-position: 50% 50%;
+   background-image: url('../img/background.jpg');
+   background-repeat:repeat;
+ }
+ .fullscreen_bg:before{background-color: transparent;}
