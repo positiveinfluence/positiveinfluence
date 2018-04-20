@@ -101,7 +101,7 @@ input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].col
 }
 /* End of login */
 /* Register page */
-.register-container{max-width:425px;margin:5% auto;}
+.register-container{max-width:425px;margin:4% auto;}
 .register-container .registerbox .registerbox-textbox {padding: 5px 20px;}
 .register-container .registerbox .registerbox-title {font-size: 16px !important;}
 .register-container .registerbox {width:425px !important;overflow: hidden;height: auto !important;}
@@ -643,7 +643,19 @@ textarea{resize: none;}
    background-image: url('../img/background.jpg');
    background-repeat:repeat;
  }
+ .payment-info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../img/payment.png');
+    background-repeat:repeat;
+  }
  .fullscreen_bg:before{background-color: transparent;}
+ .payment-info:before{background-color: transparent;}
 .payment-text label{color:#fff !important;}
 .payment-text p{color:#fff !important;}
 .nopaddingleft{padding-left:0px !important;}
