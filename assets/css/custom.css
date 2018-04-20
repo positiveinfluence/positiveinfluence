@@ -644,3 +644,10 @@ textarea{resize: none;}
    background-repeat:repeat;
  }
  .fullscreen_bg:before{background-color: transparent;}
+.payment-text label{color:#fff !important;}
+.payment-text p{color:#fff !important;}
+.nopaddingleft{padding-left:0px !important;}
+.error-container h1 {    margin: -120px 0 0 0 !important;}
+.error-divider { padding: 38px 0 !important;}
+.error-divider h2{margin-bottom: 15px !important;}
+.width-130 {width:130px;}
