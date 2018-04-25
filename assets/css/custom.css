@@ -663,3 +663,22 @@ textarea{resize: none;}
 .error-divider { padding: 38px 0 !important;}
 .error-divider h2{margin-bottom: 15px !important;}
 .width-130 {width:130px;}
+.footer{
+    text-align: center;
+    background: #3d4544;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 7px;
+    border-left: 5px solid;
+}
+.cust-popover {
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+    top: 24px;
+    background: #3d4544;
+    padding: 4px 7px;
+    color: #fff;
+}
