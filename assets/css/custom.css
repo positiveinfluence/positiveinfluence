@@ -170,6 +170,7 @@ input[type=checkbox].colored-primary:checked~.text:before, input[type=radio].col
     min-height: 25px !important;
 }
 .cust-hr{border-top:1px dashed rgba(0,0,0,.2) !important;}
+.cust-hr-2{border-top:1px dashed rgba(0,0,0,.2) !important;margin-top: 2px;margin-bottom: 10px;}
 .month-color{color:#37948e;}
 .employee-card{font-size: 13px !important;}
 .mrg-btm-10{margin-bottom: 10px !important;}
@@ -631,7 +632,7 @@ textarea{resize: none;}
 .loginbox-forgot a {background-color:transparent !important; border:none; padding:0px; }
 .loginbox-forgot a:hover, .loginbox-forgot a:focus, .loginbox-forgot a:active {background-color:transparent !important;}
 .mrg-top-80{margin-top:80px;}
-.mrg-top-20{margin-top:20px;}
+.mrg-top-20{margin-top:20px !important;}
 .fullscreen_bg {
    position: fixed;
    top: 0;
@@ -682,3 +683,32 @@ textarea{resize: none;}
     padding: 4px 7px;
     color: #fff;
 }
+/* Research Dashboard css */
+.research-dash-card {margin-bottom: 15px;border-top-left-radius: 23%;border-bottom-left-radius: 23%;
+  height: 65px;}
+.card-left {padding: 15px;width: 25%; border-radius: 24%;height: 65px;float: left;}
+.card-right{float: right;padding-right: 12px;}
+.card-right h4 {color: #fff;font-weight: 500 !important;font-size: 17px;}
+.card-right h5 {color: #fff;font-weight: 600 !important;font-size: 19px;text-align: right;}
+.card-one-dark{background-color: #d6a315;box-shadow: 6px 6px 8px -4px #face53;}
+.card-one-light{background-color: #face53;}
+.card-two-dark{background-color: #202e47;box-shadow: 6px 6px 8px -4px #32456a;}
+.card-two-light{background-color: #32456a;}
+.card-three-dark{background-color: #587e93;box-shadow: 6px 6px 8px -4px #6694af;}
+.card-three-light{background-color: #6694af;}
+.card-four-dark{background-color: #a85751;box-shadow: 6px 6px 8px -4px #c7706a;}
+.card-four-light{background-color: #c7706a;}
+
+.sentiment-green {padding: 0px 9px;background-color: #43ce7b;}
+.sentiment-yellow {padding: 0px 9px;background-color: #face53}
+.sentiment-red {padding: 0px 9px;background-color: #ff0000;}
+.bordered-themethird {border-color: #face53 !important;color:#face53 !important;}
+.themethird {color:#face53 !important;}
+.highcharts-credits {display: none !important;}
+.page-num{
+    text-align: left;
+    float: left;
+}
+.service-wd{width:40%;}
+.c-nopaddingleft{padding-left:0px !important;}
+.c-nopaddingright{padding-right:0px !important}

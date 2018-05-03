@@ -349,9 +349,111 @@
                     </div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="form-group mrg-top-20">
+                    <div class="form-group">
                       <label for="inputsm">Product Category</label>
-                      <select class="form-control">
+                      <select id="e2" multiple="multiple" style="width: 100%;">
+                        <optgroup label="Automitive">
+                          <option>Vehicles</option>
+                          <option>Others</option>
+                        </optgroup>
+                        <optgroup label="Beverage">
+                          <option>Spirits</option>
+                          <option>Wine</option>
+                          <option>Beer</option>
+                          <option>Malternatives</option>
+                          <option>Sports Drink</option>
+                          <option>Non-Alcoholic, Child-Focused</option>
+                          <option>Non-Alcoholic</option>
+                        </optgroup>
+                        <optgroup label="Consumer Durables">
+                          <option>Electronics / Technology</option>
+                          <option>Homewares</option>
+                          <option>Furniture & Lighting</option>
+                          <option>Toys</option>
+                          <option>Clothing (Accessories)</option>
+                          <option>Clothing (General)</option>
+                          <option>Clothing (Athletic)</option>
+                          <option>Home Appliance</option>
+                          <option>Other Durable Goods</option>
+                        </optgroup>
+                        <optgroup label="Consumer Services">
+                          <option>Legal</option>
+                          <option>Financial & Banking</option>
+                          <option>B2B Technology</option>
+                          <option>Consultancies & Professional Services</option>
+                          <option>Insurance (non-Healthcare)</option>
+                          <option>Telecommunications</option>
+                          <option>Public Education</option>
+                          <option>Private Education</option>
+                          <option>Veterinary</option>
+                          <option>Medical & Healthcare</option>
+                          <option>Energy</option>
+                          <option>Other Business Services</option>
+                          <option>Other Consumer Services</option>
+                        </optgroup>
+                        <optgroup label="FMCG">
+                          <option>Beauty</option>
+                          <option>Cleaning Products</option>
+                          <option>Other Household Goods</option>
+                          <option>Other FMCG</option>
+                        </optgroup>
+                        <optgroup label="Food">
+                          <option>Candy</option>
+                          <option>Candy, Child-Focused</option>
+                          <option>Raw & Industry-Specific</option>
+                          <option>Packaged</option>
+                          <option>Child-Focused</option>
+                        </optgroup>
+                        <optgroup label="Healthcare">
+                          <option>Perscription Medication</option>
+                          <option>OTC Oral Medications</option>
+                          <option>OTC Applications </option>
+                          <option>Vitamins & Nutraceuticals</option>
+                          <option>OTC Products & Devices</option>
+                          <option>Insurance</option>
+                          <option>Veterinary</option>
+                          <option>Health & Wellness Tech</option>
+                        </optgroup>
+                        <optgroup label="Leisure">
+                          <option>Live Events</option>
+                          <option>Museume & Galleries</option>
+                          <option>Gambling</option>
+                          <option>Sports</option>
+                          <option>Gaming</option>
+                          <option>Other Recreation</option>
+                        </optgroup>
+                        <optgroup label="Media / Entertainment">
+                          <option>Music</option>
+                          <option>Film</option>
+                          <option>Television</option>
+                          <option>Publications & Media</option>
+                          <option>Books</option>
+                          <option>News</option>
+                          <option>Digital Platforms</option>
+                          <option>Other Media</option>
+                        </optgroup>
+                        <optgroup label="Not-for-Profit">
+                          <option>Government</option>
+                          <option>Public Information</option>
+                          <option>Other Not-for-Profit</option>
+                          <option>Military</option>
+                          <option>Charities</option>
+                          <option>Non-Profit</option>
+                          <option>Advocacy</option>
+                        </optgroup>
+                        <optgroup label="Retail">
+                          <option>Retail</option>
+                          <option>eCommerce</option>
+                          <option>Restaurants</option>
+                          <option>Fast Food</option>
+                        </optgroup>
+                        <optgroup label="Travel">
+                          <option>Travel</option>
+                          <option>Tourism</option>
+                          <option>Transportation</option>
+                        </optgroup>
+                                            </select>
+                      <!-- <select class="form-control">
                         <optgroup label="Automitive">
                           <option>Select</option>
                           <option>Vehicles</option>
@@ -453,17 +555,32 @@
                           <option>Tourism</option>
                           <option>Transportation</option>
                         </optgroup>
-                      </select>
+                      </select> -->
 
                     </div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="inputsm">Additional Category to be examined - additional fees may apply</label>
                       <span class="input-icon icon-right">
                         <input type="text" class="form-control">
                       </span>
+                    </div> -->
+                    <div class="form-group col-md-6 c-nopaddingleft">
+                      <label for="inputsm">Service Type</label>
+                      <select class="form-control">
+                          <option>Select Service</option>
+                          <option>Standard</option>
+                          <option>Rush</option>
+                          <option>Next Up</option>
+                      </select>
                     </div>
+                      <div class="form-group col-sm-6 c-nopaddingright">
+                        <label for="inputsm">Price</label>
+                        <span class="input-icon icon-right">
+                          <input =="text" class="form-control" placeholder="$500" disabled>
+                        </span>
+                      </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="checkbox mrg-top-20">
@@ -673,7 +790,33 @@
 
 </div>
 
+<div class="modal fade custom-report in" id="custom-report" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="mySmallModalLabel">Additional <details></details></h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="form-group">
+              <label for="inputsm">Additional details regarding the research to be conducted</label>
+              <span class="input-icon icon-right">
+                <input type="text" class="form-control">
+              </span>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn cust-btn mrg-btm-10">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
 
 
 </body>
@@ -742,12 +885,23 @@ function readURL(input) {
 function changeProduct(id){
   var thisvalue = $("#"+id).find("option:selected").text();
   if(thisvalue=="Custom Report"){
-    $("#specificDetails").show();
-  }
-  else{
-    $("#specificDetails").hide();
+    $("#custom-report").modal('show');
   }
 }
 </script>
+
+
+    <script>
+        //--Jquery Select2--
+        $("#e1").select2();
+        $("#e2").select2({
+            placeholder: "Select a State",
+            allowClear: true
+        });
+
+
+
+
+    </script>
 <!--  /Body -->
 </html>
